@@ -193,7 +193,7 @@
                                     class="img-responsive" />
                             </a>
                         </div>
-                        <div class="col-md-2 text-center" style="display:none">
+                        <div class="col-md-2 text-center" style="display: none">
                             <a href="<%=ResolveUrl("~/Configuration/HelpCenter.aspx") %>"><i class="fa fa-comments fa-5x">
                             </i>
                                 <br />
@@ -223,10 +223,8 @@
         </div>
     </div>
     <!-- Begin page content -->
-    <div class="container">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
     <div class="ContentBottom">
     </div>
     <div class="clearDiv">

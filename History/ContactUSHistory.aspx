@@ -99,6 +99,7 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<div class="container">
     <div id="tabsMain" style="height: 350px; width:1200px">
         <ul>
             <li><a href="#tabs-1">Contact US History</a></li>
@@ -183,6 +184,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div id="allHiddenField">
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Cnn %>"
