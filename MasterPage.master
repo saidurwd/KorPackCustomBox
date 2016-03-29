@@ -1,0 +1,246 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/Images/favicon.ico">
+    <%--<link type="text/css" rel="stylesheet" href="http://jqueryui.com/themes/base/ui.all.css" />--%>
+    <!-- Bootstrap core CSS -->
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="~/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="~/bootstrap/css/theme.css" rel="stylesheet">
+    <link href="~/bootstrap/css/docs.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="~/bootstrap/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <asp:PlaceHolder runat="server">
+        <script src="<%= ResolveUrl("~/Scripts/jquery-1.4.2.min.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery-ui-1.8.custom.min.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/thickbox-compressed.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.corners.min.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.watermark.min.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/CommonJS.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.quicksearch.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/adminmenu.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jHtmlArea/jHtmlArea-0.7.0.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.validate.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/stuHovermenu3.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/MasterPage.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.tablednd.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery-latest.js")  %>" type="text/javascript"></script>
+        <script src="<%= ResolveUrl("~/Scripts/jquery.tablesorter.js")  %>" type="text/javascript"></script>
+        <%--<script src="<%= ResolveUrl("~/Scripts/ScrollableGridPlugin.js")  %>" type="text/javascript"></script>--%>
+        <%--<link rel="stylesheet" type="text/css" href="~/Style/EnterpriseBlue/ie6.css" media="screen" />--%>
+        <%--<![endif]--%>
+        <!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="~/Style/EnterpriseBlue/ie7.css" media="screen" />
+	<![endif]-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.showDateCss').datepicker({ showOn: 'both', buttonImage: '<%= ResolveUrl("~/Style/EnterPriseBlue/images/calendar.gif") %>', buttonImageOnly: true, dateFormat: '<%= ConfigurationManager.AppSettings["DateTimeFormat"] %>' });
+
+            });
+            var strFeatures = "dependent=no, resizable=yes,top=100,left=100,Width=900,Height=500,help=no,maximize=no;minimize=yes,scrollbars=no";
+
+            function test(obj) {
+                var load = window.open('http://www.korpack.com', '', '');
+            }
+
+        </script>
+        <style type="text/css">
+            ul
+            {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            ul li
+            {
+                display: block;
+                position: relative;
+                float: left;
+            }
+            
+            li ul
+            {
+                display: none;
+            }
+            
+            ul li a
+            {
+                display: block;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+                white-space: nowrap;
+            }
+            
+            ul li a:hover
+            {
+                background: whitesmoke;
+                color: black;
+            }
+            
+            li:hover ul
+            {
+                display: block;
+                position: absolute;
+                z-index: 999;
+            }
+            
+            li:hover li
+            {
+                float: none;
+            }
+            
+            li:hover a
+            {
+                background: whitesmoke;
+                color: black;
+            }
+            
+            li:hover li a:hover
+            {
+                background: whitesmoke;
+                color: black;
+            }
+            
+            #idmenu li ul li
+            {
+            }
+        </style>
+    </asp:PlaceHolder>
+    <link href="~/Style/EnterpriseBlue/jquery-ui-1.8.custom.css" rel="stylesheet" type="text/css" />
+    <link href="~/Style/EnterPriseBlue/thickbox.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <noscript>
+        <p>
+            Script Not supported!!.
+        </p>
+    </noscript>
+    <form id="form1" runat="server" autocomplete="off">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"
+        ScriptMode="Release">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/RequestHandlerAjax.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <!--[if IE 5]><div id="ie5" class="ie"><![endif]-->
+    <!--[if IE 6]><div id="ie6" class="ie"><![endif]-->
+    <!--[if IE 7]><div id="ie7" class="ie"><![endif]-->
+    <!--[if IE 8]><div id="ie8" class="ie"><![endif]-->
+    <div class="infoShowDiv">
+    </div>
+    <div class="errorShowDiv">
+    </div>
+    <div class="row">
+        <div class="col-md-12 topNav">
+            <div class="container Stencil">
+                <div class="row">
+                    <div class="col-md-2" style="margin-top: 3px;">
+                        <a href="http://www.korpack.com" target="_blank">
+                            <img alt="logo" src="<%=ResolveUrl("~/Images/logo_top.png") %>" /></a>
+                    </div>
+                    <div class="col-md-4 text-right" style="margin-top: 10px; font-size: 18px;">
+                        Call Today 630.213.3600</div>
+                    <div class="col-md-6">
+                        <ul class="nav nav-pills">
+                            <li role="presentation"><a href="<%=ResolveUrl("~/Home.aspx") %>" class="menuTextColor">
+                                Home</a></li>
+                            <li role="presentation" style="display: none"><a class="menuTextColor" href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>">
+                                About Korpack</a></li>
+                            <li role="presentation" id="idchangepass" runat="server"><a class="menuTextColor"
+                                href="<%=ResolveUrl("~/Configuration/ChangePwd.aspx") %>">Change Password</a></li>
+                            <li role="presentation"><a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>"
+                                class="menuTextColor">Calculate</a></li>
+                            <li role="presentation" id="idlogout" runat="server"><a class="menuTextColor" id="alogout"
+                                runat="server" href="~/Logout.aspx">Logout</a></li>
+                            <li role="presentation" id="idlogin" runat="server"><a class="menuTextColor" id="a1"
+                                runat="server" href="~/Login.aspx">Sign In</a></li>
+                            <li role="presentation" id="liSignUP" runat="server"><a id="A2" class="menuTextColor thickbox"
+                                href="<%=ResolveUrl("~/UserAuthentication/SignUp.aspx?TB_iframe=true&height=300&width=700&modal=true") %>">
+                                Sign Up</a></li>
+                        </ul>
+                        <ul id="idmenu" runat="server">
+                            <li><a href="#" style="font-weight: bold">System Tools</a>
+                                <ul>
+                                    <%= SmallSubMenuSetting2() %>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <div class="container Stencil">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>">
+                                <img src="<%=ResolveUrl("~/Images/quickor-logo-3_transparent54.jpg") %>" alt="QUICKOR"
+                                    class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="col-md-2 text-center" style="display:none">
+                            <a href="<%=ResolveUrl("~/Configuration/HelpCenter.aspx") %>"><i class="fa fa-comments fa-5x">
+                            </i>
+                                <br />
+                                <span class="menuText">Help Center</span></a>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a href="<%=ResolveUrl("~/Configuration/BoxSamples.aspx") %>"><i class="fa fa-inbox fa-5x">
+                            </i>
+                                <br />
+                                <span class="menuText">Box Examples</span></a>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>"><i class="fa fa-users fa-5x">
+                            </i>
+                                <br />
+                                <span class="menuText">About Us</span></a>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a href="<%=ResolveUrl("~/Configuration/ContactUS.aspx") %>"><i class="fa fa-phone fa-5x">
+                            </i>
+                                <br />
+                                <span class="menuText">Contact Us</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page content -->
+    <div class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="ContentBottom">
+    </div>
+    <div class="clearDiv">
+    </div>
+    <asp:HiddenField ID="hidCompanyID" runat="server" />
+    <asp:HiddenField ID="HidBackDatedPosting" runat="server" />
+    <asp:HiddenField ID="hidUserID" runat="server" />
+    <!--[if lte IE 9]></div><![endif]-->
+    </form>
+    <footer class="footer">
+          <div class="container">
+            <p class="text-muted text-center"><a href="http://www.korpack.com" target="_blank"><img alt="logo" src="<%=ResolveUrl("~/Images/kp-logo-footer.png") %>" /> </a> All rights reserved by Korpack &reg;</p>
+          </div>
+    </footer>
+    <script src="~/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
