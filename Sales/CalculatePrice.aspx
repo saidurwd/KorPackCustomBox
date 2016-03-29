@@ -182,8 +182,8 @@
                     able to be delivered the next business day if not the same day!
                     <br />
                     <br />
-                    Should you need a quote however for a large run, don’t worry, click here (hyperlink
-                    to quotes@korpack.com) and send us a quote, because we excel in that area too.
+                    Should you need a quote however for a large run, don’t worry, click <a href="mailto:quotes@korpack.com">
+                        here</a> and send us a quote, because we excel in that area too.
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
