@@ -34,3 +34,6 @@
     font-weight: normal;
     letter-spacing: 2px;*/
 }
+#imgLoad .img-responsive {
+    margin: 0 auto;
+}

@@ -142,82 +142,80 @@
     </div>
     <div class="errorShowDiv">
     </div>
-    <div class="row">
-        <div class="col-md-12 topNav">
-            <div class="container Stencil">
-                <div class="row">
-                    <div class="col-md-2" style="margin-top: 3px;">
-                        <a href="http://www.korpack.com" target="_blank">
-                            <img alt="logo" src="<%=ResolveUrl("~/Images/logo_top.png") %>" /></a>
-                    </div>
-                    <div class="col-md-4 text-right" style="margin-top: 10px; font-size: 18px;">
-                        Call Today 630.213.3600</div>
-                    <div class="col-md-6">
-                        <ul class="nav nav-pills">
-                            <li role="presentation"><a href="<%=ResolveUrl("~/Home.aspx") %>" class="menuTextColor">
-                                Home</a></li>
-                            <li role="presentation" style="display: none"><a class="menuTextColor" href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>">
-                                About Korpack</a></li>
-                            <li role="presentation" id="idchangepass" runat="server"><a class="menuTextColor"
-                                href="<%=ResolveUrl("~/Configuration/ChangePwd.aspx") %>">Change Password</a></li>
-                            <li role="presentation"><a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>"
-                                class="menuTextColor">Calculate</a></li>
-                            <li role="presentation" id="idlogout" runat="server"><a class="menuTextColor" id="alogout"
-                                runat="server" href="~/Logout.aspx">Logout</a></li>
-                            <li role="presentation" id="idlogin" runat="server"><a class="menuTextColor" id="a1"
-                                runat="server" href="~/Login.aspx">Sign In</a></li>
-                            <li role="presentation" id="liSignUP" runat="server"><a id="A2" class="menuTextColor thickbox"
-                                href="<%=ResolveUrl("~/UserAuthentication/SignUp.aspx?TB_iframe=true&height=300&width=700&modal=true") %>">
-                                Sign Up</a></li>
-                        </ul>
-                        <ul id="idmenu" runat="server">
-                            <li><a href="#" style="font-weight: bold">System Tools</a>
-                                <ul>
-                                    <%= SmallSubMenuSetting2() %>
-                                </ul>
-                            </li>
-                        </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 topNav">
+                <div class="container Stencil">
+                    <div class="row">
+                        <div class="col-md-2" style="margin-top: 3px;">
+                            <a href="http://www.korpack.com" target="_blank">
+                                <img alt="logo" src="<%=ResolveUrl("~/Images/logo_top.png") %>" /></a>
+                        </div>
+                        <div class="col-md-4 text-right" style="margin-top: 10px; font-size: 18px;">
+                            Call Today 630.213.3600</div>
+                        <div class="col-md-6">
+                            <ul class="nav nav-pills">
+                                <li role="presentation"><a href="<%=ResolveUrl("~/Home.aspx") %>" class="menuTextColor">
+                                    Home</a></li>
+                                <li role="presentation" style="display: none"><a class="menuTextColor" href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>">
+                                    About Korpack</a></li>
+                                <li role="presentation" id="idchangepass" runat="server"><a class="menuTextColor"
+                                    href="<%=ResolveUrl("~/Configuration/ChangePwd.aspx") %>">Change Password</a></li>
+                                <li role="presentation"><a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>"
+                                    class="menuTextColor">Calculate</a></li>
+                                <li role="presentation" id="idlogout" runat="server"><a class="menuTextColor" id="alogout"
+                                    runat="server" href="~/Logout.aspx">Logout</a></li>
+                                <li role="presentation" id="idlogin" runat="server"><a class="menuTextColor" id="a1"
+                                    runat="server" href="~/Login.aspx">Sign In</a></li>
+                                <li role="presentation" id="liSignUP" runat="server"><a id="A2" class="menuTextColor thickbox"
+                                    href="<%=ResolveUrl("~/UserAuthentication/SignUp.aspx?TB_iframe=true&height=300&width=700&modal=true") %>">
+                                    Sign Up</a></li>
+                            </ul>
+                            <ul id="idmenu" runat="server">
+                                <li><a href="#" style="font-weight: bold">System Tools</a>
+                                    <ul>
+                                        <%= SmallSubMenuSetting2() %>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="jumbotron">
-                <div class="container Stencil">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>">
-                                <img src="<%=ResolveUrl("~/Images/quickor-logo-3_transparent54.jpg") %>" alt="QUICKOR"
-                                    class="img-responsive" />
-                            </a>
-                        </div>
-                        <div class="col-md-2 text-center" style="display: none">
-                            <a href="<%=ResolveUrl("~/Configuration/HelpCenter.aspx") %>"><i class="fa fa-comments fa-5x">
-                            </i>
-                                <br />
-                                <span class="menuText">Help Center</span></a>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <a href="<%=ResolveUrl("~/Configuration/BoxSamples.aspx") %>"><i class="fa fa-inbox fa-5x">
-                            </i>
-                                <br />
-                                <span class="menuText">Box Examples</span></a>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <a href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>"><i class="fa fa-users fa-5x">
-                            </i>
-                                <br />
-                                <span class="menuText">About Us</span></a>
-                        </div>
-                        <div class="col-md-2 text-center">
-                            <a href="<%=ResolveUrl("~/Configuration/ContactUS.aspx") %>"><i class="fa fa-phone fa-5x">
-                            </i>
-                                <br />
-                                <span class="menuText">Contact Us</span></a>
-                        </div>
-                    </div>
+    <div class="jumbotron">
+        <div class="container Stencil">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>">
+                        <img src="<%=ResolveUrl("~/Images/quickor-logo-3_transparent54.jpg") %>" alt="QUICKOR"
+                            class="img-responsive" />
+                    </a>
+                </div>
+                <div class="col-md-2 text-center" style="display: none">
+                    <a href="<%=ResolveUrl("~/Configuration/HelpCenter.aspx") %>"><i class="fa fa-comments fa-5x">
+                    </i>
+                        <br />
+                        <span class="menuText">Help Center</span></a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="<%=ResolveUrl("~/Configuration/BoxSamples.aspx") %>"><i class="fa fa-inbox fa-5x">
+                    </i>
+                        <br />
+                        <span class="menuText">Box Examples</span></a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>"><i class="fa fa-users fa-5x">
+                    </i>
+                        <br />
+                        <span class="menuText">About Us</span></a>
+                </div>
+                <div class="col-md-2 text-center">
+                    <a href="<%=ResolveUrl("~/Configuration/ContactUS.aspx") %>"><i class="fa fa-phone fa-5x">
+                    </i>
+                        <br />
+                        <span class="menuText">Contact Us</span></a>
                 </div>
             </div>
         </div>

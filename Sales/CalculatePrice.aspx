@@ -163,7 +163,7 @@
             //lblStyleSelected
             $('#defaultImg').hide();
             $('#imgLoad').html("");
-            $('#imgLoad').append("<img src='../Images/box/" + clicked_id + "-L.png' height='250px' width='250px' />");
+            $('#imgLoad').append("<img src='../Images/box/" + clicked_id + "-L.png' class='img-responsive'/>"); //height='250px'
             $('#ctl00_ContentPlaceHolder1_lblStyle').text(clicked_id);
             $('#ctl00_ContentPlaceHolder1_lblStyleSelected').text(stylename);
             bindOnKeyUp1();
@@ -174,8 +174,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="well well-lg" style="height: 445px;">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="well well-lg" style="height: 465px;">
                     Our on demand Quickor machine provides you with flexibility that before was only
                     a dream. We can now create Boxes in a matter of seconds to your specific dimensions.
                     Don’t worry about minimums, tooling or lead time. 90% of our Quickor orders are
@@ -186,13 +186,13 @@
                         here</a> and send us a quote, because we excel in that area too.
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="bs-callout bs-callout-info">
                     <h4>
                         Choose Your Box Style</h4>
                     <div class="row">
                         <div class="col-md-12" style="text-align: center">
-                            <img src="../Images/box/1.png" id="1" alt="RSC" width="100" onclick="reply_click(this.id, this.title)"
+                            <img src="../Images/box/1.png" id="1" alt="RSC" width="120" height="120" onclick="reply_click(this.id, this.title)"
                                 title="RSC" />
                             <img src="../Images/box/2.png" id="2" alt="BKF" width="100" onclick="reply_click(this.id, this.title)"
                                 title="Bookfold" />
@@ -339,23 +339,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">
                             <asp:Label ID="lblStyleSelected" runat="server" Text="RSC" CssClass=""></asp:Label></h3>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 text-center" id="imgLoad" style="height: 250px;">
-                            <img src="../Images/box/1.png" alt="Box" id="defaultImg" height="250px" width="250px" />
+                        <div class="col-md-12 text-center" id="imgLoad" style="min-height:250px; margin-top:10px;">
+                            <img src="../Images/box/1-L.png" alt="Box" id="defaultImg" class="img-responsive text-center"/>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-7 text-right">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-right">
                             <h5>
                                 Final Each Price:</h5>
                         </div>
-                        <div class="col-md-5 amountText">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 amountText">
                             <asp:Label ID="FinalEachPrice" runat="server" Text="0.00" CssClass=""></asp:Label>
                         </div>
                     </div>
@@ -386,11 +386,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
-                        <asp:Button ID="Button3" runat="server" Text="Calculate" Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <asp:Button ID="Button3" CssClass="btn btn-default btn-block" runat="server" Text="Calculate" Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
                     </div>
-                    <div class="col-md-5">
-                        <asp:Button ID="Button4" runat="server" Text="Email My Quote" OnClick="btnProcessPO_Click" />
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+                        <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote" OnClick="btnProcessPO_Click" />
                     </div>
                 </div>
                 <div class="row">
