@@ -184,13 +184,13 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron">
+    <div class="KuickorHeader">
         <div class="container Stencil">
             <div class="row">
                 <div class="col-md-4">
                     <a href="<%=ResolveUrl("~/Sales/CalculatePrice.aspx") %>">
                         <img src="<%=ResolveUrl("~/Images/quickor-logo-3_transparent54.jpg") %>" alt="QUICKOR"
-                            class="img-responsive" />
+                            class="img-responsive" style="margin-top:20px;" />
                     </a>
                 </div>
                 <div class="col-md-2 text-center" style="display: none">
@@ -200,19 +200,19 @@
                         <span class="menuText">Help Center</span></a>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="<%=ResolveUrl("~/Configuration/BoxSamples.aspx") %>"><i class="fa fa-inbox fa-5x">
+                    <a href="<%=ResolveUrl("~/Configuration/BoxSamples.aspx") %>"><i class="fa fa-hdd-o fa-5x">
                     </i>
                         <br />
                         <span class="menuText">Box Examples</span></a>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>"><i class="fa fa-users fa-5x">
+                    <a href="<%=ResolveUrl("~/Configuration/AboutUS.aspx") %>"><i class="fa fa-user fa-5x">
                     </i>
                         <br />
                         <span class="menuText">About Us</span></a>
                 </div>
                 <div class="col-md-2 text-center">
-                    <a href="<%=ResolveUrl("~/Configuration/ContactUS.aspx") %>"><i class="fa fa-phone fa-5x">
+                    <a href="<%=ResolveUrl("~/Configuration/ContactUS.aspx") %>"><i class="fa fa-envelope-o fa-5x">
                     </i>
                         <br />
                         <span class="menuText">Contact Us</span></a>

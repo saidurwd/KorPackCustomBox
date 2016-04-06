@@ -175,7 +175,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="well well-lg" style="height: 465px;">
+                <div class="thumbnail text-justify" style="height: 465px; padding: 20px; font-weight: 600;">
                     Our on demand Quickor machine provides you with flexibility that before was only
                     a dream. We can now create Boxes in a matter of seconds to your specific dimensions.
                     Don’t worry about minimums, tooling or lead time. 90% of our Quickor orders are
@@ -346,27 +346,22 @@
                             <asp:Label ID="lblStyleSelected" runat="server" Text="RSC" CssClass=""></asp:Label></h3>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 text-center" id="imgLoad" style="min-height:250px; margin-top:10px;">
-                            <img src="../Images/box/1-L.png" alt="Box" id="defaultImg" class="img-responsive text-center"/>
+                        <div class="col-md-12 text-center" id="imgLoad" style="min-height: 250px; margin-top: 10px;">
+                            <img src="../Images/box/1-L.png" alt="Box" id="defaultImg" class="img-responsive text-center" />
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 text-right">
-                            <h5>
-                                Final Each Price:</h5>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 amountText">
-                            <asp:Label ID="FinalEachPrice" runat="server" Text="0.00" CssClass=""></asp:Label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            Final Each Price: <span class="amountText">
+                                <asp:Label ID="FinalEachPrice" runat="server" Text="0.00" CssClass=""></asp:Label></span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-7 text-right">
-                            <h5>
-                                Total For This Qty.:</h5>
-                        </div>
-                        <div class="col-md-5 amountText">
-                            <asp:Label ID="TotalForThisQty" runat="server" Text="0.00" CssClass=""></asp:Label>
-                            <asp:Label ID="lblCBHAutoId" runat="server" Text="0.00" CssClass="" Style="display: none"></asp:Label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            Total For This Qty.: <span class="amountText">
+                                <asp:Label ID="TotalForThisQty" runat="server" Text="0.00" CssClass=""></asp:Label>
+                                <asp:Label ID="lblCBHAutoId" runat="server" Text="0.00" CssClass="" Style="display: none"></asp:Label>
+                                </asp:Label></span>
                         </div>
                     </div>
                     <div class="row" style="display: none;">
@@ -386,11 +381,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button3" CssClass="btn btn-default btn-block" runat="server" Text="Calculate" Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <asp:Button ID="Button3" CssClass="btn btn-default btn-block" runat="server" Text="Calculate"
+                            Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-                        <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote" OnClick="btnProcessPO_Click" />
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                        <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
+                            OnClick="btnProcessPO_Click" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <asp:Button ID="Button6" CssClass="btn btn-default btn-block" runat="server" Text="RFQ" />
+                    </div>
+                </div>
+                <div class="space-10">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div style="font-weight: 600;">
+                            *RFQ’s are for larger runs that are run traditionally. Longer lead times and minimum
+                            order size will apply.<br />
+                            *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>, someone will reply shortly.
+                        </div>
                     </div>
                 </div>
                 <div class="row">
