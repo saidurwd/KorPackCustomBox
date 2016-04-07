@@ -174,6 +174,25 @@
             //return clicked_id;
         }
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            initializeHoverHelp();
+        });
+
+        function initializeHoverHelp() {
+            $('.helpHover').tooltip({
+                track: false,
+                delay: 0,
+                showURL: false,
+                showBody: true,
+                top: 5,
+                extraClass: "calculatorHelpPlacement",
+                fade: 1,
+                opacity: -1.0,
+                transparency: 0
+            });
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container-fluid">
@@ -285,7 +304,9 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Board Grade</label>
+                                    Board Grade <span class="helpHover" title="<h5 class='text-danger text-uppercase'>Board Grade</h5><span class='tooltip_text'>32C – Standard Grade Board<br />200C-  Standard Grade Single Wall<br />44C-  Heavy Duty Single Wall<br />48BC-  Heavy Duty Double Wall</span>">
+                                        <i class="fa fa-question-circle"></i></span>
+                                </label>
                                 <asp:DropDownList ID="ddlBroadGrade" runat="server" CssClass="form-control input-sm"
                                     onchange="javaScript:bindOnKeyUp1()">
                                     <asp:ListItem Text="1" Value="1"></asp:ListItem>
@@ -297,7 +318,9 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Flip Corr Dir.</label>
+                                    Flip Corr Dir. <span class="helpHover" title="<h5 class='text-danger text-uppercase'>Flip Corrugation Direction</h5><span class='tooltip_text'>You should only choose “Yes” for “Flip Corrugation Direction”<br /> if the corrugation direction does not matter (i.e. bookfold, tele<br /> trays, pad) Or it is a side loading box/tall box that would get<br /> laid on it is on its side.”</span>">
+                                        <i class="fa fa-question-circle"></i></span>
+                                    </label>
                                 <asp:DropDownList ID="ddlFlip" runat="server" CssClass="form-control input-sm" onchange="javaScript:bindOnKeyUp1()">
                                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
                                     <asp:ListItem Text="No" Value="0" Selected="True"></asp:ListItem>
@@ -391,10 +414,11 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
-                            OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();"/>
+                            OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click" runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();"/>
+                        <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click"
+                            runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
                 </div>
                 <div class="space-10">
@@ -404,7 +428,8 @@
                         <div style="font-weight: 600;">
                             *RFQ’s are for larger runs that are run traditionally. Longer lead times and minimum
                             order size will apply.<br />
-                            *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>, someone will reply shortly.
+                            *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>,
+                            someone will reply shortly.
                         </div>
                     </div>
                 </div>
