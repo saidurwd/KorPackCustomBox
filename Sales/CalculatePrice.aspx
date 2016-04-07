@@ -3,7 +3,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <script type="text/javascript">
-
+        function CheckIfLoggedIn() {
+            var _UserID = '<% =Session["UserID"] %>';
+            if (_UserID.length == 0)
+            { alert('Please Sign In. Thank you.'); return false; }
+        }
         function resetValues() {
             $('#ctl00_ContentPlaceHolder1_txtSquareFootEach').val(0);
             $('#ctl00_ContentPlaceHolder1_txtTotalFootEach').val(0);
@@ -387,10 +391,10 @@
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                         <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
-                            OnClick="btnProcessPO_Click" />
+                            OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();"/>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button6" CssClass="btn btn-default btn-block" runat="server" Text="RFQ" />
+                        <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click" runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();"/>
                     </div>
                 </div>
                 <div class="space-10">

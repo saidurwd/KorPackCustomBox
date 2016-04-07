@@ -90,7 +90,6 @@ public partial class Sales_DirGroup : System.Web.UI.Page
     {
         try
         {
-
             string myScript1 = "showInfo('Successfully Completed.');";
             ScriptManager.RegisterStartupScript(Page, this.GetType(), "ClientScript", myScript1, true);
             myScript1 = "";
@@ -131,6 +130,24 @@ public partial class Sales_DirGroup : System.Web.UI.Page
             //myScript1 = "";
         }
     }
+    protected void btnProcessPORFQ_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            DataTable dt = getEmailID();
+            string requestedByEmail = dt.Rows[0]["Email"].ToString();
+            sendemailoffice365ForRFQ(requestedByEmail);
+            sendemailoffice365ForRFQTo(requestedByEmail);
+
+            string myScript1 = "showInfo('Operation Completed. Email Sent Successfully.');";
+            ScriptManager.RegisterStartupScript(Page, this.GetType(), "ClientScript", myScript1, true);
+            myScript1 = "";
+        }
+        catch (Exception ex)
+        {
+            Response.Write(ex.ToString());
+        }
+    }
     //private void exportFIle(DataTable _dt)
     //{
     //    var dataTable = _dt;
@@ -169,7 +186,7 @@ public partial class Sales_DirGroup : System.Web.UI.Page
     //}
     private DataSet getMasterData()
     {
-
+        
         string strSQL = "";
         strSQL = @"
         select [StyleId], [StyleCId] from [dbo].[CB_Style] order by [StyleCId];
@@ -266,6 +283,21 @@ public partial class Sales_DirGroup : System.Web.UI.Page
         dt = ds.Tables[0];
         return dt;
     }
+    private DataTable getEmailID()
+    {
+        DataTable dt = null;
+        string strUserId = Session["UserID"].ToString();
+
+        string strSQL = "";
+        strSQL = @"SELECT U.Email
+        FROM [dbo].[TB_PrmUserInfo] U 
+        where U.UserID=" + strUserId + @"";
+        ExecuteSQL obAtten = new ExecuteSQL();
+        DataSet ds = new DataSet();
+        ds = obAtten.ExecuteQueryDataset(strSQL);
+        dt = ds.Tables[0];
+        return dt;
+    }
     //void ExportToPdf(Telerik.Reporting.Report reportToExport, string soid)
     //{
 
@@ -322,7 +354,56 @@ public partial class Sales_DirGroup : System.Web.UI.Page
         msg.Dispose();
 
     }
+    private void sendemailoffice365ForRFQ(string semail)
+    {
+        
+        System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
+        msg.From = new System.Net.Mail.MailAddress("quotes@korpack.com", "KorPack");
+        msg.To.Add(new System.Net.Mail.MailAddress(semail, semail));
+        msg.To.Add(new System.Net.Mail.MailAddress("quotes@korpack.com", "Korpack Quote"));
+        msg.Bcc.Add(new System.Net.Mail.MailAddress("nnovy@korpack.com", "Nick Novy"));
+        msg.Bcc.Add(new System.Net.Mail.MailAddress("faaruk@yahoo.com", "Korpack Quote"));
 
+        msg.Subject = "RFQ by " + Session["UserName"].ToString();
+        msg.Body = Session["UserName"].ToString() + " has requested for RFQ. Please reply as soon as possible.";
+        msg.IsBodyHtml = true;
+
+        System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
+        client.UseDefaultCredentials = false;
+        client.Credentials = new System.Net.NetworkCredential("quotes@korpack.com", "Dato0401");
+        client.Port = 587; // You can use Port 25 if 587 is blocked (mine is!)
+        client.Host = "smtp.office365.com";
+        client.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+        client.EnableSsl = true;
+
+        client.Send(msg);
+        msg.Dispose();
+
+    }
+    private void sendemailoffice365ForRFQTo(string semail)
+    {
+        System.Net.Mail.MailMessage msg = new System.Net.Mail.MailMessage();
+        msg.From = new System.Net.Mail.MailAddress("quotes@korpack.com", "KorPack");
+        msg.To.Add(new System.Net.Mail.MailAddress(semail, semail));
+        msg.Bcc.Add(new System.Net.Mail.MailAddress("nnovy@korpack.com", "Nick Novy"));
+        msg.Bcc.Add(new System.Net.Mail.MailAddress("faaruk@yahoo.com", "Korpack Quote"));
+
+        msg.Subject = "Thank you from Korpack for contacting us! ";
+        msg.Body ="Hello " +Session["UserName"].ToString() + ", <br/><br/> Thank you for contacting us. We will get back to you soon.<br/><br/><br/> Best Regards,<br/>Team Korpack";
+        msg.IsBodyHtml = true;
+
+        System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient();
+        client.UseDefaultCredentials = false;
+        client.Credentials = new System.Net.NetworkCredential("quotes@korpack.com", "Dato0401");
+        client.Port = 587; // You can use Port 25 if 587 is blocked (mine is!)
+        client.Host = "smtp.office365.com";
+        client.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+        client.EnableSsl = true;
+
+        client.Send(msg);
+        msg.Dispose();
+
+    }
     private string emailbody(string quotenumber, DataTable _dt)
     {
         string body = @"<table>
