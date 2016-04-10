@@ -320,7 +320,7 @@
                                 <label for="BoardGrade">
                                     Flip Corr Dir. <span class="helpHover" title="<h5 class='text-danger text-uppercase'>Flip Corrugation Direction</h5><span class='tooltip_text'>You should only choose “Yes” for “Flip Corrugation Direction”<br /> if the corrugation direction does not matter (i.e. bookfold, tele<br /> trays, pad) Or it is a side loading box/tall box that would get<br /> laid on it is on its side.”</span>">
                                         <i class="fa fa-question-circle"></i></span>
-                                    </label>
+                                </label>
                                 <asp:DropDownList ID="ddlFlip" runat="server" CssClass="form-control input-sm" onchange="javaScript:bindOnKeyUp1()">
                                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
                                     <asp:ListItem Text="No" Value="0" Selected="True"></asp:ListItem>
@@ -335,7 +335,9 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Perforated?</label>
+                                    Perforated? <span class="helpHover" title="<h5 class='text-danger text-uppercase'>Perforated?</h5><span class='tooltip_text'>you should only choose “yes” for perforated for 0<br /> or shallow depth Bookfolds, this will allow a <br />cleaner edge and quicker fold, but it adds costs</span>">
+                                        <i class="fa fa-question-circle"></i></span>
+                                </label>
                                 <asp:DropDownList ID="ddlPerforated" runat="server" CssClass="form-control input-sm"
                                     onchange="javaScript:bindOnKeyUp1()">
                                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
@@ -408,15 +410,19 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button3" CssClass="btn btn-default btn-block" runat="server" Text="Calculate"
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <asp:Button ID="Button3" CssClass="btn btn-default" runat="server" Text="Calculate"
                             Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-right">
+                        <asp:Button ID="Button4" CssClass="btn btn-default" runat="server" Text="Email My Quote"
                             OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                </div>
+                <div class="space-10">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-6 col-sm-offset-12 col-xs-offset-12">
                         <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click"
                             runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
