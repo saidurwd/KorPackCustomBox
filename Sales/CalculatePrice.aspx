@@ -198,15 +198,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="thumbnail text-justify" style="height: 465px; padding: 20px; font-weight: 600;">
-                    Our on demand Quickor machine provides you with flexibility that before was only
-                    a dream. We can now create Boxes in a matter of seconds to your specific dimensions.
-                    Don’t worry about minimums, tooling or lead time. 90% of our Quickor orders are
-                    able to be delivered the next business day if not the same day!
-                    <br />
-                    <br />
-                    Should you need a quote however for a large run, don’t worry, click <a href="mailto:quotes@korpack.com">
-                        here</a> and send us a quote, because we excel in that area too.
+                <div class="thumbnail" style="height: 465px; padding: 20px; font-weight: 600;">
+                    <h4>
+                        Our on demand Quickor machine provides you with</h4>
+                    <ul class="home_ul_space">
+                        <li>Flexibility that before was only a dream</li>
+                        <li>No worries about minimums </li>
+                        <li>Boxes being created within seconds with your specific dimensions/board grade</li>
+                        <li>No tooling or lead time</li>
+                        <li>Next or same day delivery</li>
+                    </ul>
+                    If you need a quote on a large quantity, custom printing, or any other custom design,
+                    please click <a href="mailto:quotes@korpack.com">here</a>.
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -367,6 +370,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="space-10">
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div style="font-weight: 600;">
+                            *RFQ’s are for larger runs that are run traditionally. Longer lead times and minimum
+                            order size will apply.<br />
+                            *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>,
+                            someone will reply shortly.
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="panel panel-primary">
@@ -410,33 +425,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <asp:Button ID="Button3" CssClass="btn btn-default" runat="server" Text="Calculate"
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
+                        <asp:Button ID="Button3" CssClass="btn btn-default btn-block" runat="server" Text="Calculate"
                             Style="color: red" OnClientClick="javaScript: return bindOnKeyUp();" />
                     </div>
-                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 text-right">
-                        <asp:Button ID="Button4" CssClass="btn btn-default" runat="server" Text="Email My Quote"
+                </div>
+                <div class="space-10">
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
+                        <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
                             OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
                 </div>
                 <div class="space-10">
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-6 col-sm-offset-12 col-xs-offset-12">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
                         <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click"
                             runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
-                    </div>
-                </div>
-                <div class="space-10">
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div style="font-weight: 600;">
-                            *RFQ’s are for larger runs that are run traditionally. Longer lead times and minimum
-                            order size will apply.<br />
-                            *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>,
-                            someone will reply shortly.
-                        </div>
                     </div>
                 </div>
                 <div class="row">

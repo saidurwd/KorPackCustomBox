@@ -61,3 +61,8 @@
     font-size: 12px;
     line-height: 18px;
 }
+ul.home_ul_space
+{
+    line-height:25px;
+    margin:20px 0 20px 40px;
+}
