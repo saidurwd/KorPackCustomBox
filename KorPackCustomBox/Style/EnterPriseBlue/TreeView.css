@@ -1,0 +1,139 @@
+﻿/* This style sheet is intended to contain OFTEN CHANGED rules used when the TreeView control adapter is enabled. */
+/* Empty rules are provided merely as a convenience for your future use or experimentation. */
+
+
+.PrettyTree div.AspNet-TreeView ul li
+{
+    white-space: nowrap;
+    padding: 3px 0 2px 0; 
+    font-size: small;
+    font-family: Tahoma;
+}
+
+.PrettyTree div.AspNet-TreeView ul ul
+{
+    margin: 2px 0 2px 10px;
+}
+
+.PrettyTree div.AspNet-TreeView ul li img
+{
+    border: none;
+    vertical-align: middle;
+    margin: 0 2px 0 0;
+}
+
+.PrettyTree div.AspNet-TreeView li a
+{
+    text-decoration: none;
+}
+
+.PrettyTree div.AspNet-TreeView li.AspNet-TreeView-Root
+{
+}
+
+.PrettyTree div.AspNet-TreeView li.AspNet-TreeView-Parent
+{
+}
+
+.PrettyTree div.AspNet-TreeView li.AspNet-TreeView-Leaf
+{
+    margin-left: 20px;
+}
+
+/* Consider changing the cursor value (below) to something like */
+/*     cursor: n-resize;                                        */
+.PrettyTree div.AspNet-TreeView .AspNet-TreeView-ClickableNonlink
+{
+    cursor: pointer;
+}
+
+/* Consider changing the cursor value (below) to something like */
+/*     cursor: n-resize;                                        */
+.PrettyTree div.AspNet-TreeView .AspNet-TreeView-Collapse
+{
+    background: url(images/collapse.gif) 0 0 no-repeat;
+    width: 15px;
+    margin-right: 5px;
+    float:left;
+    cursor: pointer;
+    font-family: Courier;
+    font-size: large;
+    line-height: 15px;
+}
+
+/* Consider changing the cursor value (below) to something like */
+/*     cursor: n-resize;                                        */
+.PrettyTree div.AspNet-TreeView .AspNet-TreeView-Expand
+{
+    background:  url(images/expand.gif) 0 0 no-repeat;
+    width: 15px;
+    margin-right: 5px;
+    float:left;
+    cursor: pointer;
+    font-family: Courier;
+    font-size: large;
+    line-height: 15px;
+}
+
+.PrettyTree div.AspNet-TreeView a,
+.PrettyTree div.AspNet-TreeView a:visited,
+.PrettyTree div.AspNet-TreeView a:active,
+.PrettyTree div.AspNet-TreeView a:hover,
+.PrettyTree div.AspNet-TreeView a:link
+{
+    color: #00008B;
+}
+
+.PrettyTree div.AspNet-TreeView .AspNet-TreeView-Selected a
+{
+    font-weight: bold !important;
+    color: #8A2BE2 !important;
+}
+
+.PrettyTree div.AspNet-TreeView .AspNet-TreeView-Selected ul a
+{
+    font-weight: normal !important;
+    color: #00008B !important;
+}
+
+/* ------------------------------------------------------------------- */
+/* Specific to this sample web site. */
+/* These rules are probably not useful in your site. */
+
+#SampleTreeView
+{
+    background: #B9D3EE;
+    position: relative;
+    width: 100%;
+}
+
+#SampleTreeView #Sample-Control
+{
+    position: relative;
+    float: left;
+    width: 17em;
+    background: #F5F5F5;
+    margin-right: 2em;
+    z-index: 500;
+}
+
+#SampleTreeView #Sample-Content
+{
+    padding: 0.5em 2em 0.5em 1em;
+    color: Black;
+    position: relative;
+    font-size: small;
+    font-family: Times New Roman;
+}
+
+#SampleTreeView #Sample-Content h1,
+#SampleTreeView #Sample-Content p
+{
+    margin: 0;
+}
+
+#SampleTreeView .clearing
+{
+    clear:both;
+    height: 1px;
+}

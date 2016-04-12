@@ -1,0 +1,32 @@
+/* 
+ * ie6.css - css styles for Win IE 6
+ *
+ */
+#ie6
+{
+}
+.ie 
+{
+}
+#ie6 .DropDownBox
+{
+    width:256px;
+    height:22px;
+    font-size:12px;
+}
+
+#ie6 .DropDownBoxLogin
+{
+    width:217px;
+    height:25px;
+    line-height:25px;
+    font-size:1.2em;
+}
+#ie6 .text-input
+{
+    width:209px;
+}
+#ie6 .txtBoxLogin
+{
+    width:150px;
+}

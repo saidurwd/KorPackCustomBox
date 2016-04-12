@@ -1,0 +1,2482 @@
+﻿/*==============================================*/
+/*
+
+Congratulations! No Error Found.
+This document validates as W3C CSS level 3 ! by Ashfaq Bhai
+
+*/
+/*==============================================*/
+
+
+/* Cascading Stylesheet for Common Elements */
+
+/* Begin: General */
+body
+{
+    /*padding-left: 5px;         /*padding-right: 8px;*/
+    margin: 0px;
+    padding: 0px;
+    font-family: "Myriad Pro" , verdana, Arial, sans-serif;
+    font-size: 12px;
+    color: #666666; /*font-family: Arial, Verdana;     font-size: 1.0em;     line-height: 2.3em;     margin: 0;     border: 0;     margin: 0px;     height: 100%;*/
+}
+
+body.loginPage
+{
+    background: url("images/html_bg.JPG") repeat-x scroll 0 0 #5F5F5F;
+    margin: 0;
+    padding: 0;
+}
+
+
+body .loginBody
+{
+    /*background: url(images/empresa_login.jpg); */
+    width: 1034px;
+    height: 538px;
+    margin: 100px auto;
+}
+
+.loginTable
+{
+    width: 275px;
+    border-left: solid 2px white;
+    position: relative;
+    left: 500px;
+    top: 183px;
+    padding-left: 25px;
+    color: White; /*height: 124px;*/
+    height: 155px;
+    padding-top: 17px;
+}
+.loginTable span
+{
+    display: block;
+    clear: left;
+    padding-bottom: 2px;
+}
+
+.loginTable p
+{
+    margin: 9px;
+}
+
+
+
+
+body h1
+{
+    padding-bottom: 18px;
+    border-bottom: 0px dotted #bbbbbb;
+    font-size: 1.2em;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    color: #888888;
+}
+span.allcaps
+{
+    font-variant: small-caps;
+}
+body h2
+{
+    margin-bottom: 10px;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: 1.65em;
+    color: #888888;
+}
+/*a:link, a:visited
+{
+    color: #105EC5;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+a:hover
+{
+    color: Gray;
+    font-size: 1.2em;
+}*/
+/*
+ul
+{
+margin: 0;
+padding: 0;
+list-style:circle;
+}
+
+li
+{
+line-height:20px;
+padding-left:5px;
+padding-top: 0px;
+background-repeat: no-repeat;
+background-position: 0px 2px;
+margin-left:10px;
+font-size:12px;
+}
+li a:link, a:visited
+{
+    color: #105EC5; 
+	text-decoration: none;
+	font-weight:normal;
+	text-transform:capitalize;
+}
+li a:hover
+{
+    color:Red;
+}
+*/
+
+
+.clearDiv /* This has a ie7 version of ie css */
+{
+    clear: both;
+}
+
+.cleardiv /* This has a ie7 version of ie css */
+{
+    clear: both;
+}
+
+
+
+div.back
+{
+    margin-bottom: -20px;
+    position: relative;
+    top: -28px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    left: 0px;
+}
+div.back img
+{
+    position: relative;
+    margin-top: 0em;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    background-color: #ffffff;
+}
+div.back a:link, div.back a:visited
+{
+    color: #839ce7;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding-right: 8px;
+    top: -.2em;
+    left: .25em;
+}
+div.back a:hover
+{
+    color: #000099;
+    text-decoration: underline !important;
+}
+/* End: General */
+
+/* Begin: Tables */
+body table.listview, table.gridview, table.detailstable
+{
+    border: 1px solid #E9E9E9;
+    border-bottom: 3px solid #dbddff;
+    border-collapse: collapse;
+    font-family: "Myriad Pro" , verdana, Arial, sans-serif;
+    color: #666666;
+    font-size: 12px;
+}
+
+body table.listview th, table.gridview th, table.detailstable th, body table.listview td, table.gridview td, table.detailstable td
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1em;
+    text-transform: none;
+}
+table.gridview th
+{
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #DEECF8;
+    color: #800000;
+}
+.gridviewEmptyMsg
+{
+    font-size: 16px;
+    font-variant: small-caps;
+    margin: 0 auto;
+    padding-left: 40%;
+    text-align: center;
+    color: #A52A2A;
+}
+.gridviewaltrow
+{
+    /*background-color:none;*/
+    line-height: 1.1em;
+}
+
+
+
+table.gridview a:link, table.gridview a:visited, table.gridview a:hover
+{
+    color: #105EC5;
+    text-decoration: none;
+    padding-left: 2px;
+    font-family: "Myriad Pro" , Verdana, Sans-Serif;
+    font-size: 1.0em;
+    font-weight: normal;
+    text-transform: none;
+}
+
+table.gridview th a:link, table.gridview th a:visited, table.gridview th a:hover
+{
+    color: #800000;
+    padding-top: 6px 5px;
+    line-height: 1em;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+table.gridview a:hover
+{
+    text-decoration: underline;
+}
+
+
+/*body table.listview th, table.gridview th, table.detailstable th
+{
+    background-position: 1px 1px;
+    background-repeat: repeat-x;
+    background-color: #ffffff;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.3em;
+    color: #666666; 
+    /*border-left: 1px solid #dbddff;     border-right: 1px solid #dbddff;*/
+/*border-top: 1px solid #dbddff;
+    border-bottom: 1px solid #dbddff;
+}
+
+body table.listview td, table.gridview td, table.detailstable td
+{
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px dotted #dadada;
+}
+*/
+
+body td.bold
+{
+    font-weight: bold;
+}
+
+body th a:link, body th a:visited, body th a:hover
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+body td a:link, body td a:visited
+{
+    /* color: #718ABE;*/
+    color: #666666;
+    text-decoration: none;
+    padding-right: 6px;
+}
+body td a:hover
+{
+    /*color: #000099;     text-decoration: underline !important;*/
+    color: #000;
+    text-decoration: underline;
+}
+
+
+
+.newLink a:link, .newLink a:visited, .newLink a:visited, .newLink a:hover
+{
+    /* color: #718ABE;*/
+    color: #666666;
+    text-decoration: none;
+    padding-left: 2px;
+    font-family: "Myriad Pro" , Verdana, Sans-Serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.newLink a:hover
+{
+    text-decoration: underline;
+}
+
+
+table.listview
+{
+    width: 100%;
+}
+table.listview td a:link, table.listview td a:visited
+{
+    font-size: 100%;
+}
+table.listview table td
+{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+table.listview th
+{
+    background-image: url(../DynamicData/Content/Images/header_back.gif);
+}
+
+table.detailstable td
+{
+    border-left: 1px solid #dbddff;
+    border-right: 1px solid #dbddff;
+    vertical-align: top;
+}
+
+table.detailstable th
+{
+    /*background: #FCFDFE;*/
+    vertical-align: top;
+}
+
+td.nowrap
+{
+    white-space: nowrap;
+}
+/* The following modifies the details table */
+body tr
+{
+    background: #FCFDFE;
+}
+/* The following modifies the controls in the list table footer */
+tr.footer td
+{
+    background: #dbddff;
+    height: 1.5em;
+}
+
+/* The following modifies the selected row in the list table */
+tr.selected td
+{
+    background: #fdffb8;
+}
+
+/* End: Tables */
+
+/* The following modifies the page number control which exists under the main table */
+div.pager
+{
+    padding: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+span.results1
+{
+    float: left;
+}
+span.results2
+{
+    float: right;
+}
+/* The following modifies the results per page control which exists under the main table */
+div.results
+{
+    display: inline;
+    position: relative;
+    padding: 0 6px;
+    float: right;
+}
+/* Set's the appearance of the drop down control*/
+.droplist
+{
+    padding: 0px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: .95em;
+    color: #666666;
+}
+/* Bottom hyperlink design*/
+div.bottomhyperlink
+{
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 100%;
+    margin-top: -3px;
+}
+div.bottomhyperlink a:link, div.bottomhyperlink a:visited
+{
+    color: #839ce7;
+    text-decoration: none;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 100%;
+    margin-top: -3px;
+}
+div.bottomhyperlink a:hover
+{
+    color: #000099;
+    text-decoration: underline !important;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 100%;
+}
+div.bottomhyperlink img
+{
+    position: relative;
+    top: 0em;
+    padding-right: .4em;
+    border: none;
+}
+
+div.detailstableActionButtonContainer
+{
+    text-align: right; /* border: solid 2px black;    */
+}
+div.detailstableActionButtonContainer a:link, div.detailstableActionButtonContainer a:visited
+{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 1px;
+    top: -.2em;
+    left: .25em;
+}
+div.detailstableActionButtonContainer a:hover
+{
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+
+
+
+
+
+body.siteMain
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #ECE9E2 url(images/pagebg.jpg) repeat-x top;
+    font-size: 62.5%;
+}
+
+body.siteMainAdmin
+{
+    background: url("images/html_bg.png") repeat-x scroll 0 0 #5F5F5F;
+    font-family: "Myriad Pro" , "Arial" , "Helvetica" , "Verdana" , "sans-serif";
+    font-size: 10px;
+    margin: 0;
+    min-height: 100%;
+    padding: 0 0 20px;
+}
+
+
+/*
+
+body.siteMainAdmin
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #E8E5E0 url(images/admin_page_bg.jpg) repeat-x top;
+    font-size: 12px; 
+    
+}
+
+*/
+
+input[type='submit'], input[type='button']
+{
+    font-family: "Myriad Pro" , Verdana, Sans-Serif;
+    font-size: 11px; /*background-color: #3B5998;     border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;     border-style: solid;     border-width: 1px;     color: #FFFFFF;     padding: 2px 15px 3px;     text-align: center;*/
+}
+
+
+/*
+input[type='submit'], input[type='button']
+{
+    font-family: Verdana, Sans-Serif;
+    font-size: 12px;
+    background-color: #3B5998;
+    border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    padding: 2px 15px 3px;
+    text-align: center;
+}
+*/
+
+/*input[type='checkbox']
+{
+    padding-right: 15px !important;
+}*/
+input[type='text'], input[type='password']
+{
+    width: 90%;
+}
+textarea
+{
+    width: 90%;
+}
+select
+{
+    width: 91%;
+}
+
+
+
+#headerlogo
+{
+    float: left;
+    position: relative; /* background-image:url(images/cooltext436773030.png);*/
+}
+#headerlinks
+{
+    float: left;
+    padding-right: 0px;
+    margin-top: 60px;
+    color: White;
+}
+#headerlinks a:link, #headerlinks a:visited, #headerlinks a:hover, #headerlinks a:active
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#headerlinks a:hover
+{
+    text-decoration: underline;
+}
+.newclass
+{
+    background-color: #00FFFF;
+    padding: inherit;
+}
+
+/* ------------------------- 18-10-2009-----------*/
+.siteMain #container
+{
+    width: 930px; /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+    margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+    text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.siteMain #middle-container
+{
+    margin-top: 14px;
+    background: #ECE9E2;
+    border: 0px solid red;
+}
+.siteMain #header
+{
+    height: 145px;
+    height: 133px !important;
+    padding: 0 10px 0 0px;
+    border: 0px solid red;
+}
+.siteMain .ie #header
+{
+    height: 145px;
+    height: 133px !important;
+    padding: 0 10px 14px 0px;
+    border: 0px solid red;
+}
+.siteMain #header h1
+{
+    margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+    padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.siteMain #ads-first-coloum
+{
+    float: left; /* since this element is floated, a width must be given */
+    width: 13%; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+    padding: 10px;
+    background: #ECE9E2;
+    border: 0px solid red;
+}
+
+.siteMain .ads-first-coloum-ul
+{
+    float: left; /* since this element is floated, a width must be given */
+    width: 15%; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+    padding: 10px;
+    background: #ECE9E2;
+}
+
+.siteMain #mainContent
+{
+    padding: 10px;
+    margin: 0;
+    width: 67%;
+    float: left;
+    border: 0px solid red;
+}
+
+.siteMain #ads-second-coloum
+{
+    float: right;
+    width: 15%;
+    background: #ECE9E2;
+    padding-top: 10px;
+    border: 0px solid red;
+}
+.siteMain #footer
+{
+    padding: 0 10px 0 20px;
+    height: 108px;
+    background: url(images/footer.jpg) repeat-x;
+}
+.search-pad
+{
+    float: right;
+    margin: 10px 5px 0 0;
+}
+.input-text
+{
+    background: #000 url(images/searchbg.jpg) repeat-x;
+    height: 20px;
+    color: #000;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+.black-button
+{
+    background: #000 url(images/search_btn_bg.jpg) repeat-x;
+    height: 25px;
+    color: #fff;
+    vertical-align: middle;
+}
+.header-top
+{
+    width: 930px;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    border: 0px solid red;
+}
+.welcomeUser
+{
+    width: 400px;
+    position: relative;
+    text-align: right;
+    top: 10px;
+    color: White;
+    font-size: 10pt;
+    padding: 0px 5px 0px 0px;
+    border-right: 4px double #9EC9DA;
+    float: left;
+    height: 20px;
+    border: 0px solid red;
+}
+.ChangeLocation
+{
+    width: auto;
+    position: relative;
+    text-align: right;
+    top: 10px;
+    color: White;
+    font-size: 10pt;
+    border: 0px solid red;
+    padding: 0px 0px 0px 5px;
+    float: left;
+    height: 20px;
+    border: 0px solid red;
+}
+
+
+/* Menus */
+.topmenu
+{
+    width: 450px;
+    float: left;
+    position: relative;
+    margin: 54px 0 0 0;
+    border: 0px solid red;
+}
+.topmenu2
+{
+    width: 450px;
+    float: left;
+    position: relative;
+    margin: 35px 0 0 0;
+    border: 0px solid red;
+}
+#tabs
+{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+#tabs ul
+{
+    margin: 0;
+    padding: 10px 10px 0 0px;
+    list-style: none;
+}
+
+#tabs li
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#tabs a
+{
+    float: left;
+    margin: 0;
+    padding: 0 0 0 6px;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+#tabs a span
+{
+    float: left;
+    display: block;
+    padding: 6px 15px 4px 6px;
+    margin-right: 2px;
+    color: #FFF;
+    font-size: 1.0em;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span
+{
+    float: none;
+}
+
+/* End IE5-Mac hack */
+#tabs a:hover span
+{
+}
+
+#tabs a:hover
+{
+    background: url("images/top_nav_bg.jpg");
+    color: #4773A0;
+    font-weight: bold;
+}
+
+#tabs a:hover span
+{
+    background: url("images/top_nav_bg.jpg");
+    color: #4773A0;
+    font-weight: normal;
+}
+
+/* END*/
+
+#ads-first-coloum .ads
+{
+    margin: 0; /*background: url(images/bannar/adv_001.jpg) no-repeat;*/
+    width: 130px;
+    height: 164px;
+    margin-bottom: 2px;
+    border: 0px solid red;
+}
+
+
+#ads-first-coloum ul, #ads-second-coloum ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#ads-first-coloum img, #ads-second-coloum img
+{
+    margin: 0; /*background: url(images/bannar/adv_001.jpg) no-repeat;*/
+    width: 130px;
+    height: 164px;
+    margin-bottom: 2px;
+    border: 0px solid red;
+}
+
+#ads-second-coloum .ads
+{
+    margin: 0;
+    background: url(images/bannar/adv_003.jpg) no-repeat;
+    width: 130px;
+    height: 140px;
+    margin-bottom: 2px;
+    border: 0px solid red;
+}
+.home-top-content
+{
+    height: 30px;
+    width: 760px;
+    padding: 5px 10px 10px 0;
+    display: none;
+    border: 0px solid red;
+}
+.welcome-message
+{
+    margin: 5px 0 5px 0;
+    background: #669ACC;
+    font-size: 11px;
+    font-family: "Myriad Pro" , Verdana;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: bold;
+}
+.home-center-content
+{
+    float: left;
+    width: auto; /*600px;*/
+    background: #ffffff;
+    padding: 0 10px 0 10px;
+    border: 0px solid red;
+}
+
+
+
+#loginFullSection #loginLogoSection
+{
+    width: 184px;
+    height: 125px;
+    background-image: url(images/ent-login-logo.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    display: none;
+}
+
+#loginFullSection #loginConent
+{
+    width: 280px;
+    height: 125px;
+    float: right;
+}
+.loginButton
+{
+    font-family: "Trebuchet MS" , sans-serif;
+    background-color: #1e5389; /*border: 1px solid blue;*/
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 5px 2px 5px;
+    width: auto;
+    color: #FFFFFF;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    border: 0px; /*font-family: Verdana, Sans-Serif;     background-color: #1e5389;     border: 1px solid blue;     cursor: pointer;     font-size: 11px;     font-weight: normal;     line-height: 14px;     margin: 0;     overflow: visible;     padding: 0;     width: auto;     color: White;     height: 20px;     padding-bottom: 3px;*/
+}
+
+.failedLogin
+{
+    color: #E87B13;
+    font-family: "Myriad Pro" , Verdana, Sans-Serif;
+    font-size: 7pt;
+    display: block;
+}
+
+
+
+div.mainContent
+{
+    /*background-color: #8ea4bb; /* #e5e5e5;*/
+    padding: 5px;
+    margin: 20px auto;
+    height: auto;
+    width: 350px;
+    background-color: #fcfdfe;
+}
+
+div.mainContentfull
+{
+    padding: 5px;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    background-color: #fcfdfe;
+    border: 0px solid red;
+}
+
+
+.mainContenetTable
+{
+    width: 330px;
+    font-size: 8pt;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Myriad Pro" , "Verdana" , "Times New Roman" , Times, serif;
+    margin: auto;
+    padding: 4px;
+    border-style: none;
+    border-spacing: 0px;
+    line-height: 24px;
+}
+
+.mainContenetTablefull
+{
+    width: 100%;
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    border-style: none;
+    border-spacing: 0px;
+    line-height: 24px;
+    font-size: 1.2em;
+    border: 0px solid red;
+    padding-left: 2px;
+}
+
+.mainContenetTable .style1, .mainContenetTablefull .style1
+{
+    text-align: right;
+    padding-right: 4px;
+}
+
+.mainContenetTable .style2, .mainContenetTablefull .style2
+{
+    text-align: left;
+    padding-left: 2px;
+}
+
+#infoMsg, #errorMsg
+{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    display: none;
+    text-align: left;
+    z-index: 510;
+    padding: 0 2em !important;
+}
+
+#errorMsg span.ui-icon-close
+{
+    left: 210px;
+    position: inherit !important;
+    text-align: right;
+    top: 7px;
+}
+
+#infoMsgModal, #errorMsgModal
+{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    display: none;
+    text-align: left;
+    z-index: 100;
+    padding: 0 2em;
+}
+
+.ReqFieldSkin
+{
+    font-weight: 800;
+    color: Red;
+    padding-left: 2px;
+    text-align: left;
+    font-size: 7pt;
+    clear: both;
+}
+
+#countrySelect
+{
+    float: left;
+    width: 60%;
+}
+#bannerSelect
+{
+    float: left;
+    width: 30%;
+}
+#buttonGo
+{
+    float: right;
+    width: 5%;
+    text-align: right;
+}
+
+.ContentHeader
+{
+    font-size: 1.6em;
+    line-height: 3.0em;
+    font-weight: 800;
+}
+.ContentHeaderWhite
+{
+    font-size: 1.6em;
+    line-height: 3.0em;
+    font-weight: 800;
+    color: White;
+}
+.ContentIntroText
+{
+    font-size: 1.2em;
+    line-height: 2.0em;
+    font-weight: normal;
+    text-align: justify;
+}
+.ContentFullText
+{
+    font-size: 1.2em;
+    line-height: 2.0em;
+    font-weight: normal;
+    text-align: justify;
+}
+a.accordionLinks:link, a.accordionLinks:visited
+{
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: "Trebuchet MS" , sans-serif;
+    letter-spacing: 0.08em;
+}
+a.accordionLinks:hover
+{
+    font-weight: 800;
+}
+h3.adsTitle
+{
+    font-family: "Trebuchet MS" , sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+.adsTitleBottomline
+{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+
+a.EmailtoFriends:link, a.EmailtoFriends:visited
+{
+    font-size: 1.0em;
+    font-weight: normal;
+    font-family: "Trebuchet MS" , sans-serif;
+    letter-spacing: 0.08em;
+    color: #105EC5;
+}
+a.EmailtoFriends:hover
+{
+    font-weight: normal;
+}
+
+a.FacebookLikeLinks:link, a.FacebookLikeLinks:visited
+{
+    font-family: "Trebuchet MS" , sans-serif;
+    background-color: #1e5389; /*border: 1px solid blue;*/
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    padding: 3px 5px 3px 5px;
+    width: auto;
+    color: #FFFFFF;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+}
+a.FacebookLikeLinks:hover
+{
+    font-weight: normal;
+}
+
+.AdsDateHeader
+{
+    line-height: 30px; /*background-color:#EDEFF4;*/
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: 800; /*border:1px solid #DBDDFF;*/
+    padding-left: 10px;
+    font-style: italic;
+}
+.AdsDetailsLinks
+{
+    background-color: #ECE9E2;
+}
+a.AdsDetailsLinks:link, a.AdsDetailsLinks:visited
+{
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+a.AdsDetailsLinks:hover
+{
+    font-weight: normal;
+    color: #2E6095;
+}
+
+.foulwordindicate
+{
+    background-color: #F4A29D;
+    font-weight: normal;
+}
+
+label.error
+{
+    color: #FDFDFD;
+    background-color: #EE2020;
+    margin-left: 5px;
+    vertical-align: top;
+}
+ul.mainlevel-nav
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+ul.mainlevel-nav li
+{
+    background-image: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+    margin: 0;
+    font-size: 11px;
+    line-height: 12px;
+    white-space: nowrap;
+    border-right: 1px solid #cccccc;
+}
+
+ul.mainlevel-nav li a
+{
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #333333;
+    background: transparent;
+}
+
+.radiobuttonstyle
+{
+    width: 95%;
+    font-size: 8pt;
+}
+.radiobuttonstyle td
+{
+    width: 10%;
+}
+.radiobuttonstyle label
+{
+    padding-left: 2px;
+}
+
+.image_holder
+{
+    margin: auto;
+    width: 100%;
+    height: 130px;
+    padding-left: 10px; /*border: 1px solid red;*/
+}
+.image_holder .each_image
+{
+    width: 105px; /*border:1px solid black;*/
+    height: 105px;
+    float: left;
+}
+.image_holder img
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    text-align: center;
+}
+.image_holder .AttachHolderBox
+{
+    display: block;
+    width: 100px;
+    height: 75px;
+    color: White;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    font-weight: 800; /*border:1px solid blue;*/
+}
+.AdsTitleHeader
+{
+    font-size: 12px;
+}
+a.AdsTitleLinks:link, a.AdsTitleLinks:visited
+{
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+a.AdsTitleLinks:hover
+{
+    font-weight: normal;
+    color: #2E6095;
+}
+.close
+{
+    background-color: #1e5389;
+    border: 1px solid blue;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    color: White;
+    height: 20px;
+    padding: 2px 10px 2px 10px;
+    float: right;
+}
+a.LogoutLinks:link, a.LogoutLinks:visited
+{
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-size: 1.2em;
+}
+a.LogoutLinks:hover
+{
+    font-weight: normal;
+    color: Gray;
+}
+a.LogoutLinksSite:link, a.LogoutLinksSite:visited
+{
+    font-size: 0.9em;
+    color: White;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+a.LogoutLinksSite:hover
+{
+    color: Gray;
+}
+.loginpage_info
+{
+    font-family: "Myriad Pro" , Verdana, Sans-Serif;
+    color: #24457A;
+}
+
+a.ChangLocationLinks:link, a.ChangLocationLinks:visited
+{
+    color: #EAEFAB;
+    text-transform: none;
+    font-weight: normal;
+}
+a.ChangLocationLinks:hover
+{
+    color: #FFFFFF;
+}
+
+a.AdsCouponEvents:link, a.AdsCouponEvents:visited
+{
+    font-family:"Myriad Pro" ,  Verdana;
+    background-color: #1e5389; /*border: 1px solid blue;*/
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    padding: 3px 10px 3px 10px;
+    width: auto;
+    color: #FFFFFF;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+    border: 0px; /*     color:#105EC5;      text-transform:none;      font-weight:normal;     font-size:12px;     */
+}
+a.AdsCouponEvents:hover
+{
+    color: #999999;
+}
+div.lblKeyword
+{
+    font-size: 1.4em;
+    margin: 10px 0px 10px 0px;
+}
+div.lblResult
+{
+    font-size: 1.4em;
+    margin: 10px 0px 10px 0px;
+}
+.PaginatonLinks
+{
+    text-align: center;
+    font-size: 12px;
+}
+a.PaginatonLinks:link, a.PaginatonLinks:visited
+{
+    color: #105EC5;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 12px;
+}
+a.PaginatonLinks:hover
+{
+    color: #666666;
+}
+
+#HomeList
+{
+}
+#HomeList th.HomeTitle
+{
+    background-color: #F4F4F4;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#HomeList .cacitiesTitle
+{
+    background-color: #F4F4F4;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#HomeList ul.mainlevel-nav-home
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+#HomeList ul.mainlevel-nav-home li
+{
+    background-image: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    line-height: 21px;
+    font-size: 1.0em;
+    white-space: nowrap;
+    background-color: #ECE9E2;
+    margin: 2px;
+}
+/*#HomeList ul.mainlevel-nav-home li a:link, a:visited
+{
+	display: block;
+	font-size:1.0em;
+	padding:0px;
+	text-decoration: none;
+	color: #333333;
+    background: transparent; --it was on
+}
+#HomeList ul.mainlevel-nav-home li a:hover
+{
+	display: block;
+	font-size:1.0em;
+	padding:0px;
+	text-decoration: none;
+	color: #306297;
+	background: transparent;
+}
+*/
+#flash
+{
+    position: relative; /*or absolute*/
+    z-index: 1;
+}
+.DropDownBoxLogin
+{
+    width: 205px;
+    height: 22px;
+    font-size: 12px;
+}
+.text-input
+{
+    width: 201px;
+}
+.txtBoxLogin
+{
+    width: 150px;
+}
+.RateThisButton
+{
+    font-family: "Trebuchet MS" , sans-serif;
+    background-color: #1e5389;
+    text-align: left;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+    padding: 2px 2px 2px 2px;
+    width: 85px;
+    color: #FFFFFF;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+    border: 0px;
+}
+
+
+#accordion .admincol1, #accordion .admincol2
+{
+    float: left;
+    width: 48%;
+    padding: 5px;
+}
+
+.iframeStyleAdmin
+{
+    width: 100%;
+    height: 420px;
+    margin: 2px 2px 2px 2px;
+    border: 0;
+    overflow: hidden;
+}
+
+/************************************************
+  =CSSTABEL REALTED SKIN
+*************************************************/
+
+table.cssTableFour, table.cssTableTwo, table.cssTableSix
+{
+    width: 100%;
+    border: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Myriad Pro" , "Verdana" , "Times New Roman" , Times, serif;
+    line-height: 25px;
+    color: #800000;
+}
+
+table.cssTablePOS
+{
+    width: 100%;
+    border: 0px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: "Myriad Pro" , "Verdana" , "Times New Roman" , Times, serif;
+    line-height: 35px;
+    color: #800000;
+}
+table.cssTablePOS input[type='text'], table.cssTablePOS select
+{
+    font-family: "Myriad Pro" , Verdana, MS Sans Serif;
+}
+table.cssTablePOS input[type='submit']
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/************* cssTablePOS ***************/
+.cssTablePOS .style1
+{
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+
+.cssTablePOS .style2
+{
+    width: 45%;
+    text-align: right;
+}
+.cssTablePOS .style2
+{
+    padding-right: 25px;
+}
+
+
+
+table.cssTableAddSpecial
+{
+    font-family: "Myriad Pro" , verdana,Arial,sans-serif;
+    font-size: 12px;
+    width: 100%;
+}
+table.cssTableFour input[type='text'], table.cssTableTwo input[type='text'], table.cssTableSix input[type='text'], table.cssTableFour select, table.cssTableTwo select, table.cssTableSix select
+{
+    font-family: "Myriad Pro" , Verdana, MS Sans Serif;
+    font-size: 12px;
+}
+
+table.cssTableFour input[type='submit'], table.cssTableTwo input[type='submit'], table.cssTableSix input[type='submit']
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.cssTableFour .topRow, .cssTableFour .bottomRow, .cssTableTwo.topRow, .cssTableTwo .bottomTwo, .cssTableSix .topRow, .cssTableSix .bottomRow
+{
+    height: 20px;
+}
+.cssTableFour .showDateCss, .cssTableTwo .showDateCss, .cssTableSix .showDateCss
+{
+    width: 84%;
+}
+
+/************* cssTableFour ***************/
+
+.cssTableFour .style1, .cssTableFour .style3
+{
+    width: 15%;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+
+.cssTableFour .style2, .cssTableFour .style4
+{
+    width: 35%;
+    text-align: right;
+}
+.cssTableFour .style4
+{
+    padding-right: 25px; /*Find out buttonSection class also and fix padding*/
+}
+/************* cssTableTwo ***************/
+.cssTableTwo .style1
+{
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 30px;
+}
+
+.cssTableTwo .style2
+{
+    width: 70%;
+    text-align: right;
+}
+.cssTableTwo .style2
+{
+    padding-right: 25px;
+}
+
+/************* cssTableSix ***************/
+
+
+.cssTableSix .style1, .cssTableSix .style3, .cssTableSix .style5
+{
+    width: 9%;
+    text-align: left;
+    padding-right: 5px;
+    padding-left: 20px;
+}
+
+TableSmall
+{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.roundedTableSmall
+{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    padding: 6px;
+}
+
+.roundedTableAboutus
+{
+    font-family: "Myriad Pro" , Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    font-size:120%;
+    padding:0px;
+    margin:0px;
+    color:#000000;
+    width: 900px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    padding: 6px;
+    text-align:justify;
+}
+
+
+/*******************************IE7 CSS*****************************/
+#ie7 .ie .DropDownBox
+{
+    width: 356px;
+    height: 22px;
+    font-size: 12px;
+}
+
+
+/***********************************************/
+
+
+
+.makeTableSmall
+{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+/*******************************IE7 CSS*****************************/
+#ie7 .ie .DropDownBox
+{
+    width: 356px;
+    height: 22px;
+    font-size: 12px;
+}
+.NavMainDiv
+{
+    text-align: left;
+    line-height: 25px;
+    font-size: 12px;
+}
+.NavMainDiv .NavLinks
+{
+    float: left;
+    font-size: 1.0em;
+}
+.NavMainDiv a.NavLinks:link, a.NavLinks:visited
+{
+    font-family: "Myriad Pro" , Verdana;
+    color: #105EC5;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 1.0em;
+    text-transform: capitalize;
+}
+.NavMainDiv a.NavLinks:hover
+{
+    color: #666666;
+}
+#tabsMain
+{
+    margin: 0;
+    min-height: 530px;
+}
+#tabSub
+{
+    margin: 0;
+    min-height: 400px;
+}
+
+/*#accordion
+{
+    margin: 0;
+    min-height: 530px;
+}*/
+/*display:inline;
+ height:20px;*/
+
+
+.buttonSection
+{
+    text-align: right;
+    padding-right: 0px;
+    margin-top: 5px;
+}
+
+
+.hiddenFields
+{
+    display: none;
+    height: 0;
+}
+.buttonSection
+{
+    text-align: right;
+    padding-right: 100px;
+    margin-top: 5px;
+}
+
+.columnleft
+{
+    float: left;
+    width: 20%;
+    background-color: #FCFDFE;
+    border: 1px outset gray;
+}
+
+
+.columnleftMod
+{
+    background-color: #FCFDFE;
+    float: left;
+    width: 20%;
+    border: 1px outset gray;
+}
+.columnmiddle
+{
+    float: left;
+    width: 3%;
+    height: 250px;
+    padding-top: 250px;
+}
+.columnright
+{
+    float: right;
+    width: 76%;
+    border: 1px outset gray;
+}
+
+.columnrightMod
+{
+    float: right;
+    width: 76%;
+    border: 1px outset gray;
+}
+
+.treenodestyle
+{
+    background-color: Transparent;
+}
+.treenodestyle a
+{
+    padding-left: 5px !important;
+    display: inline !important;
+}
+
+.panelStyle
+{
+    height: 370px;
+    overflow: auto;
+}
+
+#switcher
+{
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+
+.TextBoxRight
+{
+    text-align: right;
+}
+
+.numeric_TextBox
+{
+    text-align: right;
+}
+
+
+.treeParentCss, .treeHoverCss, .treeSelectedCss, .treenodeCss
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro" , verdana;
+    font-size: 10px;
+}
+.treenodeCss
+{
+    padding-left: 5px;
+}
+.treeHoverCss
+{
+    text-decoration: underline;
+}
+.treeViewCss a, .pageNav a
+{
+    display: inline !important;
+    padding-left: 3px !important;
+}
+
+
+.configurationPage
+{
+    width: 550px;
+    margin: 0 auto;
+}
+.donotdisplay
+{
+    display: none;
+}
+.isWaterMarked
+{
+    color: #ccccd5;
+    margin-top: -1px;
+    font-family: 'times New Roman' , Times, serif;
+    font-weight: normal;
+    font-weight: bold;
+    font-style: italic;
+    display: inline;
+}
+
+.ie .isWaterMarked
+{
+    color: #ccccd5;
+    font-family: 'times New Roman' , Times, serif;
+    font-weight: normal;
+    font-weight: bold;
+    font-style: italic;
+    display: inline;
+    top: -11px !important;
+}
+
+.gridPanel
+{
+    width: 100%;
+    height: auto; /* was 600px*/
+    overflow: auto;
+}
+.gridPanelDataEntryForm
+{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    border: 2px outset gray;
+}
+.gridPanelSalary
+{
+    width: 100%;
+    height: 280px;
+    overflow: auto;
+    border: 2px outset gray;
+}
+.gridPanelDataEntry
+{
+    width: 100%; /*height: 30px;*/ /*overflow: auto;*/
+    border: 1px outset gray;
+    background-color: #EEEEEE;
+    margin: 5px 0px;
+}
+.gridPanelDataEntry .gHeader
+{
+    height: inherit;
+    background-color: #DEECF8;
+    color: #800000;
+    border: 0;
+}
+.gridPanelDataEntry .gBody
+{
+    width: 100%;
+    height: 250px;
+    overflow: auto; /*border: 2px outset gray;*/
+    clear: both;
+    font-size:22px;
+    line-height:30px;
+}
+.isWaterMarkedPOS
+{
+    font-size:12px;   
+    margin-left:2px;
+}
+.POSButtons
+{
+    font-size:22px;
+}
+.gridPanelDataEntry .gFooter
+{
+    width: 100%;
+    height: 30px; /*overflow: auto;     border: 2px outset gray;*/
+}
+.gridPanelDataEntry .gTotal
+{
+    color: Red;
+}
+
+.gHeader .gridviewheader, .gridviewheader
+{
+    padding: 6px 5px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #DEECF8;
+    color: #800000;
+    line-height: 2em;
+}
+
+.gridPanelDataEntry .gFooter .cssTableAddSpecial tr
+{
+    background-color: #87B6D9 !important;
+}
+
+.gridPanelDataEntry .gFooter .cssTableAddSpecial td, .gridPanelDataEntry .gHeader .cssTableAddSpecial td
+{
+    border-right: 1px solid #EEEEEE;
+}
+
+
+.SearchCSS
+{
+    height: 26px;
+}
+
+.dataGridStyle
+{
+    border: 0px solid red;
+}
+
+
+a.action-button
+{
+    padding: 0.4em 1em 0.4em 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+span.ui-icon
+{
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: 0.2em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+.infoSection
+{
+    border: 2px outset gray;
+    margin-bottom: 5px;
+}
+.infoSection span
+{
+    position: relative;
+    top: -8px;
+    padding-left: 5px;
+}
+
+
+.checkboxStyle
+{
+    margin: 5px;
+}
+.checkboxStyle label
+{
+    padding-right: 8px;
+    padding-left: 8px;
+    position: relative;
+    top: -2px;
+}
+
+.linkAction
+{
+    color: Blue !important;
+}
+
+.corenerOne
+{
+    width: 10px;
+    border: 2px solid red;
+}
+
+/*.smallMenu
+{
+    background-color: #000000;
+    clear: right;
+    color: #FFFFFF;
+    float: right;
+    font-family: Tunga,Verdana;
+    font-size: 10px;
+    padding-bottom: 5px;
+    position: relative;
+    text-align: right;
+    width: 250px;
+}
+.smallMenu ul
+{
+    list-style: none outside none;
+}
+.smallMenu ul li
+{
+    display: inline;
+    padding: 10px;
+}
+
+.smallMenu ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.smallMenu ul li a:hover
+{
+    color: #FFAB0A;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+.smallMenu ul.subSettings
+{
+    background-color: Gray;
+    left: 78px;
+    position: absolute;
+    text-align: left;
+    top: 14px;
+    width: 171px;
+    z-index: 501;
+    font-family: Lucida Grande,verdana,arial;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+ul.subSettings li
+{
+    display: block;
+    padding: 5px;
+    z-index: 605px;
+    line-height: 10px;
+    font-size: 10px;
+}
+
+.subSettings ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.subSettings ul li a:hover
+{
+    color: #FFAB0A;
+    text-decoration: underline;
+}
+
+/*
+============ smallMenu ==========
+*/
+/*
+#dock
+{
+    height: 25px;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+
+#dock .left
+{
+    float: left;
+    width: 3px;
+    height: 25px;
+    background: url('/images/dock.png') no-repeat left top;
+}
+
+#dock .right
+{
+    float: left;
+    width: 3px;
+    height: 25px;
+    background: url('/images/dock.png') no-repeat right top;
+}
+
+#dock ul, #dock ul li
+{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#dock ul
+{
+    padding: 0 6px;
+    height: 25px;
+    background-color: #000;
+}
+
+#dock ul li
+{
+    padding: 0 6px;
+    position: relative;
+}
+
+#dock ul li a
+{
+    float: left;
+    display: block;
+    padding: 0 8px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+#dock ul li a:hover, #dock ul li.selected a
+{
+    color: #fff;
+    border-bottom: 2px solid #ff9c08;
+}
+
+#dock ul li.selected a
+{
+    font-weight: bold;
+}
+
+#dock ul.subSettings
+{
+    background-color: Gray;
+    position: absolute;
+    text-align: left;
+    width: 170px;
+    z-index: 105;
+    font-size: 10px;
+    height: auto;
+    top: 22px;
+}
+
+#dock ul.subSettings li
+{
+    display: block;
+    z-index: 106;
+    line-height: 10px;
+    font-size: 8px;
+}
+
+#dock ul.subSettings li a
+{
+    display: block;
+    padding-right: 10px;
+}
+
+*/
+
+
+
+/* Navigation
+   -------------------------------- */
+
+
+.ui-datepicker-trigger
+{
+    position: relative !important;
+    top: 4px !important;
+}
+
+.ui-autocomplete
+{
+    max-height: 200px;
+    overflow-y: auto;
+}
+/* IE 6 doesn't support max-height
+	 * we use height instead, but this forces the menu to always be this tall
+	 */
+* html .ui-autocomplete
+{
+    height: 200px;
+}
+
+.txtBoxHidden
+{
+    display: none;
+}
+
+rtSection
+{
+    width: 90%;
+    margin: auto;
+}
+.reportSection .reportColumnOne
+{
+    width: 60%;
+    float: left;
+}
+.reportSection .reportColumnTwo
+{
+    width: 38%;
+    float: right;
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
+.reportSection .reportButton
+{
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 32px;
+}
+
+.searchSection, .searchSectionAd /* Ad for Advance */
+{
+    margin: 10px 0;
+    background-color: #F1C073;
+    padding: 5px;
+}
+
+.searchSection tr, .searchSectionAd tr
+{
+    background: transparent !important;
+}
+
+.searchSection input, .searchSection select, .searchSectionAd input, .searchSectionAd select
+{
+    margin-top: 5px;
+}
+
+
+.commentsSection .commentColumnOne
+{
+    width: 50%;
+    float: left;
+}
+
+.commentsSection .commentColumnTwo
+{
+    width: 50%;
+    float: Right;
+    text-align: right;
+    margin-top: 23px;
+}
+
+.userAuthenticationTree
+{
+    margin: 0;
+    height: 530px;
+    overflow: auto;
+}
+.userAuthenticationPanel
+{
+    margin: 0;
+    height: 530px;
+    overflow: auto;
+}
+
+.iframeStyle
+{
+    width: 100%;
+    min-height: 570px;
+    margin: 2px 2px 2px 2px;
+    border: 0;
+    overflow: hidden;
+}
+
+.bookMark
+{
+    float: right;
+    position: relative;
+    right: 2px;
+    top: 6px;
+    width: 120px;
+    z-index: 1;
+}
+
+span.makeFav
+{
+    background: url("images/adfav.png") no-repeat scroll 1px -35px transparent;
+    font-size: 24px;
+    height: 200px;
+    padding-right: 34px;
+    width: 50px;
+}
+span.madeFav
+{
+    background: url("images/adfav.png") no-repeat scroll 1px -6px transparent;
+    font-size: 24px;
+    height: 200px;
+    padding-right: 34px;
+    width: 50px;
+}
+
+span.makeFavLink
+{
+    position: relative;
+    top: -6px;
+}
+
+fieldset
+{
+    border: 1px solid gray;
+    text-align: left;
+    font-family: "Myriad Pro" , Verdana, Times New Roman;
+    font-size: 12px;
+}
+fieldset legend
+{
+    margin-left: 10px;
+}
+fieldset label
+{
+    position: relative;
+    top: -2px;
+    padding-left: 5px;
+}
+
+fieldset > div
+{
+    margin: 5px 5px;
+}
+
+.requiredCssManual, .requiredCss
+{
+    color: Red;
+}
+
+.reportStyle
+{
+    min-height: 200px;
+    border: 1px solid red;
+    margin: 20px;
+    -moz-border-radius: 4px 4px 4px 4px;
+}
+
+
+/*============================== Advance Pop-up Search Section ======================================*/
+.searchSectionAd
+{
+    display: none;
+    margin: 0 25px; /*overflow: scroll;*/
+    width: 415px;
+    z-index: 2;
+}
+
+
+.searchSectionAd #toDate, .searchSectionAd #fromDate
+{
+    display: none;
+}
+.searchSectionAd #ui-datepicker-div
+{
+    z-index: 4;
+}
+
+.afterSearch
+{
+    background-color: #CFD3D6;
+    border: 2px outset gray;
+    margin: 0 25px; /*overflow: scroll;*/
+    position: absolute;
+    width: 424px;
+    z-index: 1;
+}
+.afterAdd
+{
+    background-color: #CFD3D6;
+    height: 100px;
+    margin: 0 25px;
+    overflow: scroll;
+    width: 424px;
+}
+/*************************Export As PDF/Excel/Word Start***************************************/
+/* menu styles */
+#jsddm
+{
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 5px;
+}
+
+#jsddm li
+{
+    float: left;
+    list-style: none;
+    font: 12px Tahoma, Arial;
+}
+
+#jsddm li a
+{
+    display: block;
+    background: #324143;
+    padding: 5px 0px;
+    text-decoration: none;
+    width: 70px;
+    color: #EAFFED;
+    white-space: nowrap;
+}
+
+#jsddm li a:hover
+{
+}
+
+#jsddm li ul
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#jsddm li ul li
+{
+    float: none;
+    display: inline;
+}
+
+#jsddm li ul li a
+{
+    width: auto;
+    background: #A9C251;
+    color: #24313C;
+}
+
+#jsddm li ul li a:hover
+{
+    /*background: #8EA344;*/
+}
+#jsddm .ExportAs
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    width: 24px;
+    height: 15px;
+    border: 0px solid red;
+}
+#jsddm .ExportAsPayslip
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    width: 140px;
+    height: 22px;
+    border: 0px solid red;
+    color: #000000;
+    padding: 0px 0px 0px 25px;
+}
+#jsddm .ExportAsGrid
+{
+    width: 50px;
+    background-color: White;
+    color: #105EC5;
+    padding: 0px 0px 5px 0px;
+}
+#jsddm .ExportAsBankAdvice
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    width: 140px;
+    height: 22px;
+    border: 0px solid red;
+    color: #000000;
+    padding: 0px 0px 0px 25px;
+}
+#jsddm .ExportAsPDF
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    background-position: 0px -24px;
+    width: 24px;
+    height: 15px;
+    padding: 6px 0px 0px 35px;
+    margin: 0px 0px 5px 0px;
+}
+#jsddm .ExportAsExcel
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    background-position: 0px -48px;
+    width: 24px;
+    height: 16px;
+    padding: 6px 0px 0px 38px;
+    margin: 0px 0px 5px 0px;
+}
+#jsddm .ExportAsWOrd
+{
+    display: block;
+    background: url('images/icons201102.png') top left no-repeat;
+    background-position: 0px -72px;
+    width: 24px;
+    height: 16px;
+    padding: 6px 0px 0px 38px;
+    margin: 0px 0px 5px 0px;
+}
+#jsddm .iconbg
+{
+    border: 1px solid #86B5D9;
+    background-color: #FFFFFF;
+    width: 120px;
+    padding: 5px 0px 5px 0px;
+}
+#jsddm .iconbgGrid
+{
+    border: 1px solid #86B5D9;
+    background-color: #FFFFFF;
+    width: 25px;
+    padding: 5px 0px 5px 0px;
+}
+
+/*************************Export As PDF/Excel/Word End***************************************/
+.duplicateCheck
+{
+    color: Red;
+    font-weight: 800;
+}

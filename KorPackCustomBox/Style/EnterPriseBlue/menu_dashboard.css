@@ -1,0 +1,112 @@
+ @charset "utf-8";
+/* CSS Document */
+
+ul.menustyle {
+	border:#FF0000 1px;
+	list-style:none;
+}
+a.Procurement:link, a.Procurement:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px 0px;
+}
+a.Procurement:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px 0px;
+	display:block;
+}
+
+a.Inventory:link, a.Inventory:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -67px;
+}
+a.Inventory:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -67px;
+	display:block;
+}
+
+a.Sales:link, a.Sales:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -135px;
+}
+a.Sales:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -135px;
+	display:block;
+}
+
+a.Accounts:link, a.Accounts:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -203px;
+}
+a.Accounts:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -203px;
+	display:block;
+}
+
+a.Staff:link, a.Staff:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -270px;
+}
+a.Staff:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -270px;
+	display:block;
+}
+
+a.Payroll:link, a.Payroll:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -337px;
+}
+a.Payroll:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -337px;
+	display:block;
+}
+
+a.Settings:link, a.Settings:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -404px;
+}
+a.Settings:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -404px;
+	display:block;
+}
+
+a.DocControl:link, a.DocControl:visited {
+	background:url(images/menu.jpg) no-repeat top left;
+	display:block;
+	height:70px;
+	width:340px;
+	background-position:-8px -535px;
+}
+a.DocControl:hover {
+	background:url(images/menu.jpg) no-repeat top left;
+	background-position:-349px -535px;
+	display:block;
+}
+
+
