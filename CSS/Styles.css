@@ -1,0 +1,170 @@
+body
+{
+}
+/******************************************/
+/* for the calendar control only */
+.cssDTPComboBox
+{
+	font-weight: normal;
+	vertical-align: middle;
+	font-size: 7pt;
+	color: black;
+	font-family: Verdana;
+	background-color: white;
+	
+}
+.cssDTPLabel
+{
+	font-size: 11px;
+	vertical-align: middle;
+	color: black;
+	direction: ltr;
+	font-family: Verdana;
+	text-align: left;
+}
+
+
+.cssDatePickerBase
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 11px;
+	border-left-color: #a8a8a8;
+	border-bottom-color: #a8a8a8;
+	padding-bottom: 0px;
+	color: black;
+	border-top-color: #a8a8a8;
+	padding-top: 0px;
+	font-family: Verdana;
+	background-color: white;
+	border-right-color: #a8a8a8;
+}
+.cssDatePickerDayHeader
+{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-left:1px solid;
+	color: black;
+	border-bottom: 1px solid;
+	font-family: Verdana;
+	font-size: 11px;
+	height: 1px;
+	/*background-color: #faf1fa;*/
+	/*background-color: #9FADD1;*/
+	background-color: #CBD4EB;
+}
+.cssDatePickerToday
+{
+	/*background-color: #B0C0E9;*/
+	border-color: #F0A12A;
+	border-style: solid;
+	border-width: 2px;
+	background-color: White;
+	font-size: 11px;
+}
+.cssDatePickerDay
+{
+	border-right: 0px solid;
+	padding-right: 1px;
+	border-top: 0px solid;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	border-left: 0px solid;
+	padding-top: 1px;
+	border-bottom: 0px solid;
+	font-size: 11px;
+}
+.cssDatePickerOtherMonthDay
+{
+	background-color: #ECEDF0;
+	color:white;
+	font-size: 11px;
+	/*background-color:#faf1fa;*/
+
+	
+}
+.cssDatePickerSelectedDay
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	background-image: none;
+	padding-bottom: 0px;
+	margin: 0px;
+	color: white;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	/*background-color: #c871bf;*/
+	background-color: White;
+	border-bottom-style: none;
+	border-color: #F0A12A;
+	font-size: 11px;
+}
+.cssDatePickerTitle
+{
+	border-right: none;
+	padding-right: 0px;
+	border-top: none;
+	padding-left: 0px;
+	font-weight: bold;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-left: none;
+	width: 100%;
+	color: white;
+	padding-top: 0px;
+	border-bottom: none;
+	height: 100%;
+	/*background-color: #c871bf;*/
+	background-color: #3050A3;
+	font-size: 11px;
+}
+.cssDatePickerNextPrev
+{
+	border-right: blue 0px solid;
+	padding-right: 0px;
+	border-top: blue 0px solid;
+	padding-left: 0px;
+	font-weight: bold;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-left: blue 0px solid;
+	width: 100%;
+	color: white;
+	padding-top: 0px;
+	border-bottom: blue 0px solid;
+	height: 100%;
+	background-color: #c871bf;
+	
+	font-size: 11px;
+}
+.cssDatePickerWeekend
+{
+	/*background-color:white;*/
+	background-color: #CBD4EB;
+	color:white;
+	font-size: 11px;
+}
+.cssDatePickerSelector
+{
+	border-right: medium none;
+	padding-right: 0px;
+	border-top: white 1px;
+	padding-left: 0px;
+	background-image: none;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-left: white 1px;
+	color: blue;
+	padding-top: 0px;
+	border-bottom: white 1px;
+	background-color: #c871bf;
+	font-size: 11px;
+}
+.cssPagerPageLabel
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;	
+}
+/********************************************/

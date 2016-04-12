@@ -1,0 +1,501 @@
+﻿
+p
+{
+    line-height: 2.3em;
+    padding: 5px 0px 5px 0px; /*font-size:1.2em;*/
+}
+
+
+h1.AdminTitle
+{
+    padding: 20px 0px 20px 20px;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #666666;
+}
+/*a:link, a:visited {
+	color: #105EC5; 
+	text-decoration: none;
+	font-weight:normal;
+}
+
+a:hover {
+	color:Gray;	
+	text-decoration:underline;
+}
+*/
+/***********Built top menu CSS *************/
+#Topmenu
+{
+    /*background-color: #F0F0F0;*/
+    border: 0px solid #D4D0C8;
+    width: 1046px;
+    margin: auto;
+    clear: both; /*height: 50px;*/
+}
+
+/***********Build admin header*************/
+#adminHeader
+{
+    margin: auto;
+    /*width: 1046px;*/
+}
+
+#adminHeader div.headerTitle
+{
+    font-size: 2.6em;
+    font-weight: 800;
+    color: Black;
+    height: 40px;
+    padding-top: 1px;
+    border: 0px solid blue;
+}
+
+/***********Built admin body content CSS *************/
+#bodyContent
+{
+    /*background-color: #FFFFFF;     border-bottom:1px solid #DBDDFF;      border-left:1px solid #DBDDFF;     border-right:1px solid #DBDDFF;*/
+    /*width: 1046px;*/
+    margin-top: 5px;
+    margin: auto;
+    text-align: left;
+    clear: right;
+    border: 0px solid red;
+    z-index: 1;
+    height:800px
+}
+
+div.headerTitle .logoSection
+{
+    height: 80px;
+    float: left;
+    width: 200px; /*background-image: url('images/ent-logo.jpg');*/
+    margin-top: -4px;
+}
+div.headerTitle .menuSection
+{
+    float: right;
+    width: 800px;
+    position: relative;
+    /*background: url("images/body_bg.jpg") no-repeat scroll center top transparent;*/
+    height: 77px; /*top: 40px;  right:20px;*/
+}
+div.headerTitle .menuSection2
+{
+    float: left;
+    width: 100%;
+    position: relative;
+    /*background: url("images/body_bg.jpg") no-repeat scroll center top transparent;*/
+    height: 34px; /*top: 40px;  right:20px;*/
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left !important;
+}
+div.headerTitle .logoutSection
+{
+    text-align: right;
+    padding-top: 4px;
+    padding-bottom: 46px;
+}
+
+/*div.headerTitle .menuSection ul li
+{
+ display:inline;
+ width:20px !important;    
+}
+div.headerTitle .menuSection ul li a
+{
+ font-size:.8em;
+}*/
+
+*
+{
+    margin: 0;
+}
+html, body
+{
+    height: 95%;
+}
+.wrapper
+{
+    /*background: #1E5389 url(images/adminlogin/landing_logpage_bg.jpg) repeat-x;     min-height: 100%;     height: auto !important;     height: 100%;*/
+    margin: 0 auto -4em;
+    width: 100%;
+}
+
+
+
+.footer, .push
+{
+    height: 4em;
+    background-color: #8C8C8C;
+    /*background: url("images/Footer.PNG") repeat-y;*/
+    border: 1px outset black;
+    /*width: 1046px;*/
+    margin: -1px auto;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: Tahoma, MS Sans Serif, Verdana;
+   
+}
+
+.footer div.footerCol1
+{
+    border-right: 2px solid White;
+    float: left;
+    left: 10px;
+    position: relative;
+    top: 15px;
+    vertical-align: middle;
+    width: 10%;
+    display: none;
+}
+
+.footer div.footerCol2
+{
+    float: left;
+    width: 60%;
+    text-align: left;
+}
+
+.footer div.footerCol3
+{
+    float: right;
+    width: 38%;
+    text-align: right;
+    font-size: 12px;
+}
+
+.footer .companyName
+{
+    color: white;
+    font-family: verdana;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bolder;
+    left: 10px;
+    position: relative;
+    top:20px;
+}
+
+.democompany
+{
+    color: Red; /*FF9C08*/
+    font-family: verdana;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bolder;
+    left: 10px;
+    position: relative;
+    top:20px;
+}
+
+div.footerCol3 span
+{
+    position: relative;
+    /*top: -17px;*/
+    top: 20px;
+    color:White;
+}
+
+
+#cssTableLogin
+{
+    width: 300px;
+    border: 0px;
+    line-height: 24px; /*font-size: 8pt;*/
+    font-style: normal;
+    font-weight: normal;
+    font-family: Verdana, Times New Roman;
+    margin: 0;
+    padding-top: 5px;
+    background-color: #F5F3F4;
+}
+
+
+#cssTableLogin .style1
+{
+    width: 35%;
+    padding-right: 5px;
+    text-align: right;
+    background-color: #F5F3F4;
+}
+#cssTableLogin .style2
+{
+    width: 60%;
+    padding-left: 5px;
+    background-color: #F5F3F4;
+}
+
+
+/*..................*/
+
+
+
+/***************Masum Table CSS****************/
+/* .style1
+        {
+            padding: 2px;
+        }
+         2px;
+            vertical-align:top;
+        }
+        .style4
+        {
+            width: 5%;
+            padding: 2px;
+        }
+        .style5
+        {
+            width:20%;
+            padding:2px;
+        }
+        .style6
+        {
+            width:25%;
+            padding:2px;
+        }
+        .style7
+        {
+            width:15%;
+            padding:2px;
+        }
+        .style8
+        {
+            width:10%;
+            padding:2px;
+        }
+        .style9
+        {
+            width:10%;
+            padding:2px;
+        }*/
+.content
+{
+    width: 100%;
+    height: 100px;
+}
+
+table.cssTableAdmin
+{
+    width: 98%;
+    border-collapse: collapse;
+    background-color: #e6e6e6;
+    border: 0px solid #334d55;
+    font-size: .08em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: "Verdana" , "Times New Roman" , Times, serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+/*#AdminTitleBar .TitleBar {
+  background: #F7F7F7 url(../App_Themes/smoothness/images/deprecated.gif) center no-repeat;
+  background-position: 15px 50%;
+  text-align: left;
+  padding: 1.0em 0em 1.0em 4.0em;
+  border: 2px solid #275890; 
+  border-width: 2px 0;
+  font-family:Verdana;
+  font-size:2.0em;
+  width:965px;
+  margin:auto;
+}
+#AdminTitleBar .TitleBar {
+  background-color:#F7F7F7;
+  background-image:url(../App_Themes/smoothness/images/notice.gif);
+  border-color:#DBDDFF;
+}
+*/
+.AdminTitleBar
+{
+    padding: 0.2em 0em 0.13em 0.5em;
+    font-family: Verdana;
+    font-size: 1.8em;
+    width: 1036px;
+    margin: auto;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-top: 1px solid #5285B2;
+    text-transform: uppercase;
+    color: #26588D;
+    display: none;
+}
+
+.ContentBottom
+{
+    background: url(images/admin_page_down.jpg) no-repeat;
+    height: 23px;
+    width: 1051px;
+    margin: auto;
+    position: relative;
+    left: 3px;
+    display: block;
+    border: 0px solid red;
+    display: none;
+}
+
+/*
+	 * Round image - inner window
+	 */
+
+.forabg
+{
+    width: 97%;
+    margin: 10px;
+    padding: 0 5px;
+    clear: both;
+}
+span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span
+{
+    font-size: 1px;
+    line-height: 1px;
+    display: block;
+    height: 5px;
+    background-repeat: no-repeat;
+}
+span.corners-top
+{
+    background-image: none;
+    background-position: 0 0;
+    margin: 0 -5px;
+}
+span.corners-top span
+{
+    background-image: none;
+    background-position: 100% 0;
+}
+span.corners-bottom
+{
+    background-image: none;
+    background-position: 0 100%;
+    margin: 0 -5px;
+    clear: both;
+}
+span.corners-bottom span
+{
+    background-image: none;
+    background-position: 100% 100%;
+}
+.headbg span.corners-bottom
+{
+    margin-bottom: -1px;
+}
+span.corners-top
+{
+    background-image: url("../App_Themes/smoothness/images/corners_left.png");
+}
+span.corners-top span
+{
+    background-image: url("../App_Themes/smoothness/images/corners_right.png");
+}
+span.corners-bottom
+{
+    background-image: url("../App_Themes/smoothness/images/corners_left.png");
+}
+span.corners-bottom span
+{
+    background-image: url("../App_Themes/smoothness/images/corners_right.png");
+}
+
+/*
+	 * Icon CSS - inner window
+	 */
+.NewIcon
+{
+    background: url(../App_Themes/smoothness/images/cams_admin_icon_02.gif) no-repeat;
+    height: 50px;
+    width: 100%;
+    padding: 10px 0px 0px 45px;
+}
+a.NewIcon:link, a.NewIcon:visited
+{
+    color: #105EC5;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+a.NewIcon:hover
+{
+    color: Gray;
+}
+
+.UserManager
+{
+    background: url(../App_Themes/smoothness/images/cams_admin_icon_01.gif) no-repeat;
+    height: 60px;
+    width: 100%;
+    padding: 0px 0px 0px 75px;
+    color: #105EC5;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.UserManager2
+{
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px 0px 75px;
+    color: #105EC5;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.TableTrBackground
+{
+    background: #EDEFF4;
+    font-style: normal;
+    font-weight: normal;
+    color: #666666;
+}
+label.error
+{
+    color: #FDFDFD;
+    background-color: #EE2020;
+    margin-left: 5px;
+    vertical-align: top;
+    text-align: center;
+    padding: 4px;
+}
+
+
+div.createNew a
+{
+    color: #105EC5;
+    font-family: Verdana,Sans-Serif;
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 2px;
+    text-decoration: none;
+    text-transform: none;
+}
+div.createNew a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+.containerUP
+{
+    border-color: #808080;
+    border-style: solid;
+    border-width: 1px 0;
+    margin: auto;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 350px;
+    background-color: wheat;
+    z-index: 10;
+    text-align:center;
+}
+
+
+#createSalaryCategory
+{
+    display: inline;
+}

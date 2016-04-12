@@ -1,0 +1,1683 @@
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+	margin-bottom : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px;
+	margin-bottom : 12px;
+	vertical-align : top;
+	text-align: justify;
+	height: auto;
+	padding-top: 2px;
+	
+
+}
+.rptHeader
+{
+	
+	height: 8%;
+	 width: 100%;
+	
+}
+.rtpBody
+{
+	height: 90%;
+		 width: 100%;
+}
+.repFooter
+{
+ height: 2%;
+ 	 width: 100%;
+}
+A	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}	
+
+A:link	{	
+	text-decoration:	none;
+	color:	#31309C;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#000000;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#ffffff;
+	}	
+		
+A:hover	{
+	text-decoration:underline;
+	color:#ffffff;
+}
+
+	
+LI	{
+	list-style-type:square ;
+	margin-left : 30px;
+}
+
+
+IMG 	{
+        border: 0;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-width: 0px;  
+	}
+
+	
+.pageTitleOld	{
+	background: #678CB8;
+	background-image: url(../_Images/top.jpg);
+	color: #8E8E8E;
+	font: bold 10pt Verdana;
+	height: 88px;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 2px;	
+	padding-left: 28px;
+	margin-bottom: 10px;
+	border-top-color : #29345A;
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-bottom-color : #29345A;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+
+.pageTitle	{
+	background: #678CB8;
+	background-image: url(../_Images/top.jpg);
+	color: #8E8E8E;
+	font: bold 10pt Verdana;
+	height: 88px;
+	text-align: left;
+	padding-top: 23px;	
+	margin-bottom: 10px;
+	border-top-color : #29345A;
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-top-color : #666666;
+	border-top-style : solid;
+	border-top-width : 1px;	
+	vertical-align: top;
+	text-align: right;
+}
+
+.ReportTitleOld {
+	background-color : #CAD1DA;
+	font-family : Verdana;
+	font-size : 11px;
+	font-weight : bold;
+	color : #000000;
+	height: 25px;
+	border-top : 1px solid #FFFFFF;	
+	border-bottom : 1px solid #151B47;
+	padding-left: 17px;
+	padding-top: 1px;
+	width: 100%;
+	text-align : left;
+}
+.ReportTitle {
+	background-color : #BCD4EA;
+	font-family : Verdana;
+	font-size : 11px;
+	font-weight : bold;
+	color : #000000;
+	height: 25px;
+	border-top : 1px solid #FFFFFF;	
+	border-bottom : 1px solid #151B47;
+	padding-left: 20px;
+	padding-top: 4px;
+	width: 100%;
+	text-align : left;
+}
+
+.time	{
+	background: #FFFEF1;
+	color: #676767;
+	font: bold 7.5pt Verdana;
+	height: 26px;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 6px;	
+	padding-left: 20px;
+	margin-bottom: 4px;
+	border-bottom-color : #29345A;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+
+.whiteText
+{
+	color: White;	
+}
+.hLine
+{
+	color: Black;
+}
+.displayNone
+{
+	display: none;
+}
+.table
+{
+	font-family: Verdana;
+	color: Black;	
+	font-size: 8pt;	
+	
+	
+	
+}
+
+.tableBEI
+{
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	vertical-align: top;
+	text-align: justify;
+	margin-top: auto;
+	padding-top: 2px;
+	height: auto;
+	
+}
+
+.table2BEI
+{
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	height: auto;
+}
+
+.table3BEI
+{
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+}
+.tableHeaderBEI
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #E1E1E1;	
+	font-size: 10pt;
+	padding-left: 4px;
+	border-bottom: thin;
+	width: 20px;
+	vertical-align: top;
+	
+}
+
+.tableHeaderCenterBEI
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #E1E1E1;	
+	font-size: 10pt;
+	text-align: center;	
+	padding-left: 4px;
+	border-bottom: thin;
+	width: 20px;
+	vertical-align: top;
+	
+}
+
+
+.tableGroupByHeaderRowBEI
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	padding-left: 4px;
+	border-bottom: thin;
+	width: 400px;
+	font-weight: bold;
+}
+.tableHeaderRightBEI
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #E1E1E1;	
+	font-size: 8pt;
+	text-align: right;
+	padding-left: 4px;
+	border-bottom: thin;
+	width: 20px;
+}
+.tableHeader2BEI
+{
+	font-family: "Times New Roman","Book Antiqua","MS Sans Serif", Geneva, sans-serif;
+	
+	font-size: 10pt;
+	padding-left: 4px;
+	border-bottom: thin;
+	width: 20px;
+}
+
+
+.tableNumericRightAlighnBEI
+{
+	
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size: 8pt;
+	text-align: right;
+	
+}
+.table101
+{
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	vertical-align: text-top;
+	
+	
+}
+
+TH.table
+{
+	color: Black;
+	background-color : #DEEEFE;
+	font-weight : bold;
+	font-size : 8pt;	 
+
+}
+
+TH.table101
+{	
+	vertical-align: top;	
+}
+
+.tableColText
+{
+	text-align: Left;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	ibackground-color: #A6C3E3;
+	padding-left: 18px;
+}
+
+TD.table
+{
+	color: Black;
+	background-color : #E8F0F8;
+	border : 1px solid #524D73;
+	
+}
+.tableRow
+{
+ height: 10px;
+ width: 400px;
+
+}
+
+SPAN.table
+{
+	color: Black;
+	background-color: #DAF0F0;
+	border: 1px solid #524D73;	
+	vertical-align:top;
+	
+	
+}
+
+
+.subTable1
+{
+	ibackground-color : #A7A7A7;
+	font-family: Verdana;
+	color: Black;
+	font-size: 10pt;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 0;
+	
+	margin-left : 0px;
+	border : 1px solid #524D73;
+	height: auto;
+	
+	
+}
+
+
+
+
+.subTable1Header	{
+	
+	
+	background: #CCCC99;
+	color: #000000;
+	font: bold 9pt Verdana;
+	height: 20px;
+	border: 0px;
+	
+	padding-left: 10px;
+	text-align: left;
+	vertical-align: top;
+	
+
+}
+TH.subTable1
+{
+	color: #555555;
+	background-color : #FFFDE9;
+	font-weight : bold;
+	font-size : 8pt;
+	padding-bottom : 2;
+	padding-left : 2;
+	padding-top : 5;
+	background-color: Blue;
+	vertical-align: top;
+	
+}
+
+
+TD.subTable1
+{
+	color: Black;
+	background-color : #000000;
+	border : 1px solid #524D73;
+	vertical-align: top;
+	
+}
+
+
+
+.subTable2
+{
+	font-family: Verdana;
+	color: Black;
+	font-size: 7pt;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 0;
+	padding-top : 5;
+	margin-left : 0px;
+	border : 1px solid #524D73;
+	height: 200px;
+	vertical-align: top;
+	
+}
+
+TH.subTable2
+{
+	color: Black;
+	background-color : #F9B5B2;
+	font-weight : bold;
+	font-size : 8pt;
+	padding-bottom : 2;
+	padding-left : 2;
+	padding-top : 2;
+	
+	
+}
+
+
+TD.subTable2
+{
+	color: Black;
+	background-color : #DAF0F0;
+	border : 1px solid #524D73;
+	vertical-align:top;
+}
+
+
+.header	{
+	background: #678CB8;
+	color: #FFFFFF;
+	font: bold 9pt Verdana;
+	height: 30px;
+	width: 100%;
+	padding-left: 18px;
+	text-align: left;
+	vertical-align: middle;
+	padding-top: 2px;
+}
+
+.dataTableheader	{
+	
+	font: bold 9pt Verdana;
+	background-color: #7b96c7;
+	height: 20px;
+	text-align: left;
+	vertical-align: middle;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+
+.dataTableheader1	{
+	
+	font: bold 9pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+	
+}
+
+.dataTableheader2	{
+	
+	font: bold 6pt Verdana;
+	height: 0px;
+	text-align: left;
+	vertical-align: top;
+	
+}
+
+.paging {
+	background-color : #FFFFFF;
+	padding-left: 3px;
+	font-family: Verdana;
+	color: Black;
+	font-size: 9pt;
+	margin-bottom : 10px;
+	vertical-align : middle;
+}
+
+
+.cid {
+	font-family: Verdana;
+	color: #637194;
+	font-size: 8pt;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+}
+
+.txLink	{	
+	font-family: Verdana;
+	font-size: 7.5pt;
+	color: #0000FF;
+	font-weight : bold;
+	text-decoration: underline;
+}
+
+.txLinkS	{	
+	font-family: Verdana;
+	font-size: 7pt;
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+.text	{	
+	font-family: Verdana;
+	font-size: 8pt;
+	color: black;
+}
+
+.text2	{	
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 7.5pt;
+	color: black;
+}
+
+.text3	{
+	color: #333333;
+	font: 7.5pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+
+
+/**************  HEADER_BOLD styles **************/
+.Header1_BOLD	{
+	color: #333333;
+	font: bold 12pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header2_BOLD	{
+	color: #333333;
+	font: bold 10pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+
+.Header3_BOLD	{
+	color: #333333;
+	font: bold 8pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header4_BOLD	{
+	color: #333333;
+	font: bold 7pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header5_BOLD	{
+	color: #333333;
+	font: bold 6pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+/************** ==================== **************/
+
+
+/**************  HEADER_SIMPLE styles **************/
+
+.Header1_Simple	{
+	color: #333333;
+	font:  12pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header2_Simple	{
+	color: #333333;
+	font:  10pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header3_Simple	{
+	color: #333333;
+	font:  8pt Verdana;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+
+
+
+/************** ======================  **************/
+
+
+/**************  HEADER_BOLD_LeftAlign styles **************/
+
+.Header1_BOLD_LeftAlighn {
+	color: #333333;
+	font: bold 12pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.Header2_BOLD_LeftAlighn	{
+	color: #333333;
+	font: bold 10pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+Header3_BOLD_LeftAlighn	{
+	color: #333333;
+	font: bold 8pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+/************** ======================  **************/
+
+/************** Simple Text various pt (LEFT) **************/
+.simpleText12ptLEFT	{
+	color: #333333;
+	font: 12pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+
+.simpleText10ptLEFT	{
+	color: #333333;
+	font: 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.simpleText8ptLEFT	{
+	color: #333333;
+  	font: 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.simpleText7ptLEFT	{
+	color: #333333;
+	font: 7pt Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+.simpleText7ptLEFTSpecial	{
+	color: #333333;
+	font: 7pt Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+	
+}
+
+
+/************** ======================= **************/
+
+
+
+/************** Simple Text various pt (Center) **************/
+.simpleText12ptCenter	{
+	color: #333333;
+	font: 12pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+
+.simpleText10ptCenter	{
+	color: #333333;
+	font: 10pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.simpleText8ptCenter	{
+	color: #333333;
+  	font: 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: Center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.simpleText7ptCenter	{
+	color: #333333;
+	font: 7pt Verdana, Geneva, Arial, Helvetica, sans-serif;	
+	text-align: Center;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+/************** ======================= **************/
+
+/************** Data Table Column LEFT **************/
+
+.dataTableColumn10ptLEFT	{
+	font:  10pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptLEFT	{
+	font:  8pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.dataTableColumn7ptLEFT	{
+	font:  7pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+/*^^^^^^^^^^^^^^^^For BOLD^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+.dataTableColumn10ptLEFT_BOLD	{
+	font:  bold 10pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptLEFT_BOLD	{
+	font:  bold 8pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptLEFT_BOLDWithPAdding	{
+	font:  bold 8pt Verdana;
+	height: 10px;
+	text-align: left;
+   vertical-align: middle;
+	padding-bottom: 15px;
+	padding-top: 0px;
+}
+
+.dataTableColumn7ptLEFT_BOLD	{
+
+	font:  bold 7pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+/******************============================************************/
+
+
+/************** Data Table Column Center **************/
+
+.dataTableColumn10ptCenter	{
+	font:  10pt Verdana;
+	height: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptCenter	{
+	font:  8pt Verdana;
+	height: 10px;
+   text-align: center;
+	vertical-align: middle;
+}
+
+.dataTableColumn7ptCenter	{
+	font:  7pt Verdana;
+	height: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
+/*^^^^^^^^^^^^^^^^For BOLD^^^^^^^^^^^^^^^^^^^^^^*/
+.dataTableColumn10ptCenter_BOLD	{
+	font:  bold 10pt Verdana;
+	height: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptCenter_BOLD	{
+	font: bold 8pt Verdana;
+	height: 10px;
+   text-align: center;
+	vertical-align: middle;
+}
+
+.dataTableColumn7ptCenter_BOLD	{
+	font: bold 7pt Verdana;
+	height: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+/******************============================************************/
+
+
+/************** Data Table Column RIGHT **************/
+
+.dataTableColumn10ptRIGHT	{
+	font:  10pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptRIGHT	{
+	font:  8pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.dataTableColumn7ptRIGHT	{
+	font:  7pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+
+
+/*^^^^^^^^^^^^^^^^For BOLD^^^^^^^^^^^^^^^^^^^^^^*/
+.dataTableColumn10ptRIGHT_BOLD	{
+	font:  bold 10pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptRIGHT_BOLD	{
+	font:  bold 8pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.dataTableColumn8ptRIGHT_BOLDWithPAdding	{
+	font:  bold 8pt Verdana;
+	height: 10px;
+   text-align: right;
+   vertical-align: middle;
+	padding-bottom: 15px;
+	padding-top: 0px;
+}
+
+
+
+.dataTableColumn7ptRIGHT_BOLD	{
+	font: bold 7pt Verdana;
+	height: 10px;
+	text-align: right;
+	vertical-align: middle;
+}
+/******************============================************************/
+
+
+
+.dataTableColumnMiddle	{
+	font:  10pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.dataTableColumnRight	{
+	font:  10pt Verdana;
+	height: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+.textWhiteSimple1	{
+	color: White;
+	font: 8pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.textSimple1	{
+	color: #333333;
+	font:  8pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+.textHauwaWhite	{
+	display: none;
+}
+
+.textSimple1BOLD	{
+	color: #333333;
+	font: bold 8pt Verdana;
+	text-align: left;
+	padding-bottom: 5pt;
+	padding-top: 4px;
+}
+
+.textTotalMiddleBOLD	{
+	color: #333333;
+	text-align: center;
+	font: bold 10pt Verdana;
+	
+}
+.menuBarText {
+	font-family: Verdana;
+	font-size: 7.5pt;
+	color: #666666;
+	margin-right: 10px;
+	margin-top: 10px;
+	background-color: #D0DCE8;
+	border-top: 1px Solid #4A719C;
+	border-right: 1px Solid #4A719C;
+	border-bottom: 2px Solid #FFFFFF;
+	border-left: 1px Solid #4A719C;
+	padding: 1 6 2 6;
+}
+
+.bannerBottomLine {
+	font-family: Verdana;
+	font-size: 6pt;
+	color: #666666;	
+	background-color: #D0DCE8;
+	
+}
+
+.textBold	{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #000000;
+	font-weight : bold;
+}
+
+.textOrange	{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #F26522;
+	font-weight : bold;
+}
+
+	
+.AlignLeft
+{
+	text-align: Left;
+	font-family: Verdana;
+	color: Black;
+	font-size: 10pt;
+	ibackground-color: #A6C3E3;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+.AlignLeftCriteria
+{
+	text-align: Left;
+	font-family: "Century Gothic";
+	color: Black;
+	font-size: 9pt;
+	ibackground-color: #A6C3E3;
+	padding-left: 5px;
+}
+
+.AlignMiddleCriteria
+{
+	text-align: center;
+	font-family: "Century Gothic";
+	color: #708090;
+	font-size: 8pt;
+	ibackground-color: #A6C3E3;
+	padding-left: 5px;
+}
+
+.AlignCenterBEI
+{
+	text-align: center;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	
+}
+
+
+TH.AlignLeft
+{
+	color: Black;
+	background-color : #FFFFFF;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	ipadding-right : 5;
+	padding-top : 5;
+}
+
+
+TD.AlignLeft
+{
+	color: Black;
+	background-color : #FBFDFE;
+	vertical-align: top;
+	text-align: left;
+	padding-bottom : 2;
+	padding-left : 5;
+	ipadding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+
+.AlignRight
+{
+	text-align: right;
+	font-family: Verdana;
+	color: Black;
+	font-size: x-small;
+	ibackground-color: #A6C3E3;
+	font: normal bold sans-serif;
+}
+
+.AlignRightCellBEI
+{
+	text-align: right;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt; 	
+}
+
+
+
+.AlignLeftCellBoldBEI
+{
+	text-align: left;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt; 	
+	font: bold;
+}
+
+
+
+.AlignLeftCellBoldtable2BEI
+{
+	text-align: left;
+	font-family: Verdana;
+	color: Black;
+	font-size: 10pt; 	
+	font: bold;
+}
+
+.AlignRightCellBoldtable2BEI
+{
+	text-align: right;
+	font-family: Verdana;
+	color: Black;
+	font-size: 10pt; 	
+	font: bold;
+}
+
+TH.AlignRight
+{
+	text-align: right;
+	color: Black;
+	background-color : #FFFFFF;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+	border : 1px solid #638EBD;
+}
+
+
+TD.AlignRight
+{
+	color: Black;
+	background-color : #FBFDFE;
+	vertical-align: top;
+	text-align: right;
+	padding-bottom : 2;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+TD.Discount
+{
+	color: #B22222;
+	background-color: #FBFDFE;
+	vertical-align: top;
+	text-align: right;
+	padding-bottom: 2;
+	padding-left: 5;
+	padding-right: 5;
+	padding-top: 2;
+	border: 1px solid #638EBD;
+}
+
+.AlignCenter
+{
+	text-align: center;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	background-color: #A6C3E3;
+}
+
+
+TH.AlignCenter
+{
+	color: Black;
+	background-color : #E8EEF3;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+	border : 1px solid #638EBD;
+}
+
+
+TD.AlignCenter
+{
+	color: Black;
+	background-color : #FBFDFE;
+	vertical-align: top;
+	text-align: center;
+	padding-bottom : 2;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+
+.button {
+	font-family: Verdana;
+	color: White;
+	font-size: 9pt;
+	font-weight: bold;
+	margin-right : 15px;
+	text-decoration: underline;
+	cursor: hand;
+}
+
+.buttonS {
+	font-family: Verdana;
+	color: White;
+	font-size: 9pt;
+	background: #666666;
+	margin-right : 15px;
+	border-top: solid 1px #FFFFFF;
+	border-left: solid 1px #FFFFFF;
+	border-bottom: solid 1px #666666;	
+	border-right: solid 1px #666666;	
+	padding: 2 2 2 2;
+	cursor: hand;
+}
+
+.btn {
+	font: 7.5pt Verdana;
+	cursor: hand;
+}
+.btn1 {
+	font: 7.5pt Verdana;
+	cursor: hand;
+	margin-left: 30px;
+}
+
+.btnStyle {
+	ibackground-color : #254974;
+	color : #0000FF;
+	font: 7.5pt Verdana;
+	iborder-top: solid 1px #DADADA;
+	iborder-left: solid 1px #DADADA;
+	iborder-bottom: solid 1px #638EBD;
+	iborder-right: solid 1px #638EBD;
+	text-decoration: underline;
+	cursor: hand;
+}
+
+.btnStyle1 {
+	font: 7.5pt Verdana;
+	cursor: hand;
+}
+
+.btnStyle2 {
+	font: 8pt;
+	background-color : #FFFFFF;
+	color : #00000;
+	border : solid 1px #638EBD;
+	cursor: hand;
+}
+
+.chartborder {
+	border: solid 2px #638EBD;
+	border-left: solid 2px #638EBD;
+	border-right: solid 2px #638EBD;
+}
+
+.Dashboard
+{
+	vertical-align : top;
+}
+
+.DashboardPanel
+{
+	background-color : #254974;
+	border-bottom : 2 solid;
+	height: 415px;
+}
+
+.DashboardPanelCaption
+{
+	color: #FFFFFF;
+	float : left;
+	font: bold 9pt Verdana;
+	margin-left: 3px;
+}
+
+.DashboardPanelContent
+{
+	background-color : White;
+}
+
+.DashboardPanelButton
+{
+	float : right;
+	border: 0 none;
+}
+
+.txCaption	{
+	color: #666666;
+	font: 8pt Verdana;
+	margin-left: 2px;	
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+.tx	{
+	font: 8pt Verdana;
+	color: #000000;
+	margin-left: 2px;		
+	margin-right: 2px;
+	vertical-align: middle;	
+}
+
+.rtxCaption	{
+	color: #333333;
+	font: bold 8pt Verdana;
+	margin-right: 2px;
+	iwidth : 70px;
+	vertical-align: middle;
+}
+.pageHeaderBEI	{
+	color: #333333;
+	font: bold 16pt Verdana;
+	margin-right: 2px;
+	iwidth: 70px;
+	vertical-align: middle;
+	text-align: center;
+}
+.pageHeaderAddressBEI	{
+	color: #333333;
+	font: 10pt Georgia;
+	margin-right: 2px;
+	iwidth: 70px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.reportNameBEI	{
+	color: #333333;
+	font: bold 13pt Georgia;
+	vertical-align: middle;
+	text-align: center;
+}
+.reportNameBEIH2	{
+	color: #333333;
+	font: bold 8pt verdana;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.reportNameForBEI	{
+	color: #333333;
+	font: 9pt Verdana;
+	margin-right: 2px;
+   text-align: center;
+	vertical-align: middle;
+}
+
+
+
+.rtx	{
+	font: bold 8pt Verdana;
+	color: #000000;
+	iwidth : 75px;
+	margin-right: 2px;
+	vertical-align: middle;	
+}
+
+
+
+.dtCaption	{
+	color: #000000;
+	font: 8pt Verdana;
+	margin-left: 5px;
+	margin-right: 1px;
+	width : 170px;
+	vertical-align: middle;
+}
+
+.dt	{
+	font: 8pt Verdana;
+	color: #000000;
+	width : 75px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.rdtCaption	{
+	color: #000000;
+	font: bold 8pt Verdana;
+	margin-left: 20px;
+	margin-right: 1px;
+	width : 150px;
+	vertical-align: middle;
+}
+
+.rdt	{
+	color: #000000;
+	font: 8pt Verdana;
+	margin-left: 10px;
+	margin-right: 1px;
+	width : 150px;
+	vertical-align: middle;
+}
+
+.luCaption	{
+	color: #000000;
+	font: 8pt Verdana;
+	margin-left: 5px;
+	margin-right: 1px;
+	width : 170px;
+	vertical-align: middle;
+}
+
+.lu	{
+	font: 8pt Verdana;
+	color: #000000;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.icon {
+	cursor: hand;
+}
+
+
+
+.Center {
+	text-align: center;
+}
+
+TD.Right {
+	text-align: right;
+}
+
+.Left {
+	text-align: left;
+}
+
+
+
+	
+.AlignLeft2
+{
+	text-align: Left;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	ibackground-color: #A6C3E3;
+}
+
+
+TH.AlignLeft2
+{
+	color: Black;
+	background-color : #A6C3E3;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	ipadding-right : 5;
+	padding-top : 5;
+}
+
+
+TD.AlignLeft2
+{
+	color: Black;
+	background-color : #FFFFFF;
+	vertical-align: top;
+	text-align: left;
+	padding-bottom : 2;
+	padding-left : 5;
+	ipadding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+
+.AlignRight2
+{
+	text-align: right;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	background-color: #A6C3E3;
+}
+
+
+TH.AlignRight2
+{
+	color: Black;
+	background-color : #E8EEF3;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+	border : 1px solid #638EBD;
+}
+
+
+TD.AlignRight2
+{
+	color: Black;
+	background-color : #FFFFFF;
+	vertical-align: top;
+	text-align: right;
+	padding-bottom : 2;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+
+.AlignRight3
+{
+	text-align: right;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	background-color: #A6C3E3;
+}
+
+
+TH.AlignRight3
+{
+	color: Black;
+	background-color : #E8EEF3;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+	border : 1px solid #638EBD;
+}
+
+
+TD.AlignRight3
+{
+	color: Black;
+	background-color : #FFFEF2;
+	vertical-align: top;
+	text-align: right;
+	padding-bottom : 2;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+.AlignCenter2
+{
+	text-align: center;
+	font-family: Verdana;
+	color: Black;
+	font-size: 8pt;
+	background-color: #A6C3E3;
+}
+
+
+TH.AlignCenter2
+{
+	color: Black;
+	background-color : #E8EEF3;
+	font-weight : bold;
+	padding-bottom : 5;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 5;
+	border : 1px solid #638EBD;
+}
+
+
+TD.AlignCenter2
+{
+	color: Black;
+	background-color : #FFFFFF;
+	vertical-align: top;
+	text-align: center;
+	padding-bottom : 2;
+	padding-left : 5;
+	padding-right : 5;
+	padding-top : 2;
+	border : 1px solid #638EBD;
+}
+
+.arrow {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.current	{
+	background: #FDFBE6;
+	color: #234B7A;
+	font: bold 7.5pt Verdana;
+	height: 24px;
+	padding-left: 18px;
+	padding-right: 18px;	
+	padding-top: 4px;	
+	text-align: left;
+	border: Solid 1px #6E7E91;	
+	cursor: hand;
+	
+}
+
+.selections	{
+	background: #FDFBE6;
+	color: #234B7A;
+	font: bold 7.5pt Verdana;
+	padding-left: 10px;
+	padding-right: 10px;	
+	padding-top: 4px;	
+	text-align: left;
+	border: Solid 1px #6E7E91;	
+}
+
+.Panels
+{
+	border : 2px solid #254974;
+	height: 415px;
+	border-top: 15px solid #254974;
+}
+
+.ZeroSuppress
+{
+	color: White;
+}
+.PhotoLeft
+{
+	vertical-align: top;
+	margin-left: 0px;
+	border: 1px Solid #D2D0D0;
+}
+.PhotoLeftLogo
+{
+	vertical-align: middle;
+	margin-left: 0px;
+	margin-top: 14px;
+	border: 0;
+	
+}
+
+.PhotoLeftLogoBEI
+{
+	vertical-align: middle;
+	margin-left: 10px;
+	
+	margin-top: 8px;
+	border: 0;
+	
+}
+
+.photoRightLogoBEI
+{
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-top: 4px;
+	border: 0;
+	text-align: right;
+}
+
+.footerTextBEI
+{
+	vertical-align: middle;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 4pt;
+	color: Gray;
+	font-weight: lighter;
+	text-align: right;
+	padding-top: 10px;
+}
+
+.textPhoto	{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: #752F31;
+	font-weight : bold;
+	margin-left: 15px;	
+}
+
+
+.photoTable
+{
+	ibackground-color : #A7A7A7;
+	font-family: Verdana;
+	color: Black;
+	font-size: 7pt;
+	padding-bottom : 5;
+	padding-left: 5;
+	padding-right: 0;
+	padding-top: 11px;
+	padding-bottom: 15px;
+	border : 1px solid #524D73;
+	height: 49px;
+}
+
+TH.photoTable
+{
+	color: #555555;
+	background-color : #FFFDE9;
+	font-weight : bold;
+	font-size : 8pt;
+	padding-bottom : 2;
+	padding-left : 2;
+	padding-top : 5;
+}
+
+
+TD.photoTable
+{
+	color: Black;
+	background-color : #EFF3F7;
+	border : 1px solid #524D73;
+	vertical-align: top;
+}
+.thousandSeparator
+{
+	{0:#,0}
+	
+}
