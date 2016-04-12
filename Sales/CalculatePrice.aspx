@@ -144,10 +144,18 @@
                     data: "{ Qty: '" + _Qty + "', Length: '" + _Length + "', Width: '" + _Width + "',Height: '" + _Height + "',StyleId: '" + _Style + "',Strength: '" + _BroadGrade + "',FlipCorrDir: '" + _Flip + "',CustomersId: '" + _Customer + "',OverLap: '" + _OveLap + "',Truck: '" + _Truck + "',Perforated:'" + _Perforated + "',callFrom: '" + _callFrom + "',PCAutoId:'" + _PCAutoId + "'}",
                     dataType: "json",
                     success: function (data) {
-                        data = $.parseJSON(data); //parse if return JavaScriptSerializer().Serialize
-                        $('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data.FinalEachPrice);
-                        $('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data.TotalForThisQty);
-                        $('#ctl00_ContentPlaceHolder1_lblCBHAutoId').text(data.CBHAutoId);
+                        //data = $.parseJSON(data); //parse if return JavaScriptSerializer().Serialize
+
+                        //alert(data.d);
+                        var data1 = data.d;
+                        //alert(typeof (data1)); //it comes out to be Object
+                        ////no need to parse now if dont return JavaScriptSerializer().Serialize
+
+                        //alert(data.FinalEachPrice);
+                        $('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data1.FinalEachPrice);
+                        $('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data1.TotalForThisQty);
+                        $('#ctl00_ContentPlaceHolder1_lblCBHAutoId').text(data1.CBHAutoId);
+
 
                         //$('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data[22]);
                         //$('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data[23]);
@@ -177,16 +185,18 @@
         });
 
         function initializeHoverHelp() {
-            $('.helpHover').tooltip({
-                track: false,
-                delay: 0,
-                showURL: false,
-                showBody: true,
-                top: 5,
-                extraClass: "calculatorHelpPlacement",
-                fade: 1,
-                opacity: -1.0,
-                transparency: 0
+            $(document).ready(function () {
+                $('.helpHover').tooltip({
+                    track: false,
+                    delay: 0,
+                    showURL: false,
+                    showBody: true,
+                    top: 5,
+                    extraClass: "calculatorHelpPlacement",
+                    fade: 1,
+                    opacity: -1.0,
+                    transparency: 0
+                });
             });
         }
     </script>
@@ -196,8 +206,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="thumbnail" style="height: 465px; padding: 20px; font-weight: 600;">
-                    <h2 class="text-cemter">
-                        Our On Demand QuicKor
+                    <h2 class="text-cemter">Our On Demand QuicKor
                     <br />
                         machine provides you with:</h2>
                     <ul class="home_ul_space">
@@ -213,8 +222,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="bs-callout bs-callout-info">
-                    <h4>
-                        Choose Your Box Style</h4>
+                    <h4>Choose Your Box Style</h4>
                     <div class="row">
                         <div class="col-md-12" style="text-align: center">
                             <img src="../Images/box/1.png" id="1" alt="RSC" width="120" height="120" onclick="reply_click(this.id, this.title)"
@@ -240,8 +248,7 @@
                 </div>
                 <br />
                 <div class="bs-callout bs-callout-danger">
-                    <h4>
-                        Inside Dimensions</h4>
+                    <h4>Inside Dimensions</h4>
                     <div class="row" runat="server" id="rwPriceClass">
                         <div class="col-md-2 text-right">
                             Price Class:
@@ -282,7 +289,8 @@
                             </div>
                         </div>
                         <div class="col-md-1 text-center labelMargin">
-                            X</div>
+                            X
+                        </div>
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="width" id="lblW" class="text-center">
@@ -291,7 +299,8 @@
                             </div>
                         </div>
                         <div class="col-md-1 text-center labelMargin" id="divX">
-                            X</div>
+                            X
+                        </div>
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="Height" id="lblH" class="text-center">
@@ -370,7 +379,7 @@
                     </div>
                 </div>
                 <div class="space-10">
-            </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p class="text-right">
@@ -409,10 +418,8 @@
                         </div>
                     </div>
                     <div class="row" style="display: none;">
-                        <asp:Label ID="lblCustomer" runat="server" Text="0" Style="color: yellow; font-size: 16px;
-                            display: none"></asp:Label>&nbsp;
-                        <asp:Label ID="lblStyle" runat="server" Text="1" Style="color: yellow; font-size: 16px;
-                            display: none"></asp:Label>&nbsp;
+                        <asp:Label ID="lblCustomer" runat="server" Text="0" Style="color: yellow; font-size: 16px; display: none"></asp:Label>&nbsp;
+                        <asp:Label ID="lblStyle" runat="server" Text="1" Style="color: yellow; font-size: 16px; display: none"></asp:Label>&nbsp;
                         <div class="col-md-12">
                             <div id="columns">
                                 <ul id="column1" class="column" runat="server">
@@ -437,15 +444,15 @@
                         <asp:Button ID="Button4" CssClass="btn btn-default btn-block" runat="server" Text="Email My Quote"
                             OnClick="btnProcessPO_Click" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
-                    </div>
+                </div>
                 <div class="space-10">
                 </div>
                 <div class="row">
                     <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
                         <asp:Button ID="Button6" CssClass="btn btn-default btn-block" OnClick="btnProcessPORFQ_Click"
                             runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
-                        </div>
                     </div>
+                </div>
                 <div class="row">
                     <div class="col-md-5" style="display: none">
                         <asp:Button ID="Button1" runat="server" Text="Calculate" OnClick="btnProcessPO_Click" />
@@ -461,8 +468,8 @@
     </div>
     <br />
     <br />
-   
-   <%-- 
+
+    <%-- 
     <script type="text/javascript">
         $(document).ready(function () {
           

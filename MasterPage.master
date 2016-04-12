@@ -53,69 +53,7 @@
                 var load = window.open('http://www.korpack.com', '', '');
             }
 
-        </script>
-        <%--<style type="text/css">
-            ul
-            {
-                list-style: none;
-                padding: 0px;
-                margin: 0px;
-            }
-
-            ul li
-            {
-                    display: block;
-                    position: relative;
-                    float: left;
-                }
-
-            li ul
-            {
-                display: none;
-            }
-
-            ul li a
-            {
-                display: block;
-                padding: 5px 10px 5px 10px;
-                text-decoration: none;
-                white-space: nowrap;
-            }
-
-            ul li a:hover
-            {
-                    background: whitesmoke;
-                    color: black;
-                }
-
-            li:hover ul
-            {
-                display: block;
-                position: absolute;
-                z-index: 999;
-            }
-
-            li:hover li
-            {
-                float: none;
-            }
-
-            li:hover a
-            {
-                background: whitesmoke;
-                color: black;
-            }
-
-            li:hover li a:hover
-            {
-                background: whitesmoke;
-                color: black;
-            }
-
-            #idmenu li ul li
-            {
-            }
-        </style>--%>
+        </script>        
     </asp:PlaceHolder>
     <link href="~/Style/EnterpriseBlue/jquery-ui-1.8.custom.css" rel="stylesheet" type="text/css" />
     <link href="~/Style/EnterPriseBlue/thickbox.css" rel="stylesheet" type="text/css" />
