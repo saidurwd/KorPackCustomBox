@@ -199,11 +199,13 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <div class="thumbnail" style="height: 465px; padding: 20px; font-weight: 600;">
-                    <h4>
-                        Our on demand Quickor machine provides you with</h4>
+                    <h2 class="text-cemter">
+                        Our On Demand QuicKor
+                        <br />
+                        machine provides you with:</h2>
                     <ul class="home_ul_space">
                         <li>Flexibility that before was only a dream</li>
-                        <li>No worries about minimums </li>
+                        <li>No worries about minimums</li>
                         <li>Boxes being created within seconds with your specific dimensions/board grade</li>
                         <li>No tooling or lead time</li>
                         <li>Next or same day delivery</li>
@@ -374,12 +376,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div style="font-weight: 600;">
+                        <p class="text-right">
                             *RFQ’s are for larger runs that are run traditionally. Longer lead times and minimum
-                            order size will apply.<br />
+                            order size will apply.
+                            <br />
                             *RFQ’s will email directly to <a href="mailto:quotes@korpack.com">quotes@korpack.com</a>,
                             someone will reply shortly.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
