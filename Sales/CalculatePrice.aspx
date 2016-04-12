@@ -144,6 +144,7 @@
                     data: "{ Qty: '" + _Qty + "', Length: '" + _Length + "', Width: '" + _Width + "',Height: '" + _Height + "',StyleId: '" + _Style + "',Strength: '" + _BroadGrade + "',FlipCorrDir: '" + _Flip + "',CustomersId: '" + _Customer + "',OverLap: '" + _OveLap + "',Truck: '" + _Truck + "',Perforated:'" + _Perforated + "',callFrom: '" + _callFrom + "',PCAutoId:'" + _PCAutoId + "'}",
                     dataType: "json",
                     success: function (data) {
+                        data = $.parseJSON(data); //parse if return JavaScriptSerializer().Serialize
                         $('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data.FinalEachPrice);
                         $('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data.TotalForThisQty);
                         $('#ctl00_ContentPlaceHolder1_lblCBHAutoId').text(data.CBHAutoId);

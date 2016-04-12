@@ -5,6 +5,7 @@ using System.Web.Script.Serialization;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using System.Collections.Generic;
 using System.Web.Script.Services;
 /// <summary>
 /// Summary description for WebService
@@ -17,7 +18,7 @@ public class WebService : System.Web.Services.WebService
 {
     [WebMethod(EnableSession = true)]
     [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-    public string GetCalculations(string Qty, string Length, string Width, string Height, string StyleId, string Strength, string FlipCorrDir,
+    public ServiceOutput GetCalculations(string Qty, string Length, string Width, string Height, string StyleId, string Strength, string FlipCorrDir,
         string CustomersId, string OverLap, string Truck, string Perforated, string callFrom, string PCAutoId)
     {
         //@callFrom
@@ -77,7 +78,6 @@ public class WebService : System.Web.Services.WebService
             }
             finally
             {
-
                 con.Close();
                 con.Dispose();
                 dt.Dispose();
@@ -102,7 +102,8 @@ public class WebService : System.Web.Services.WebService
             }
             Session["CBHAutoId"] = dt.Rows[0][24].ToString();
         }
-        return new JavaScriptSerializer().Serialize(objSO);
+        return objSO;
+        //return new JavaScriptSerializer().Serialize(objSO);
 
         //List<string> itemList = new List<string>(dt.Rows.Count);
 
@@ -169,7 +170,7 @@ public class WebService : System.Web.Services.WebService
 
 
 
-        //    }
+        //}
         //return itemList.ToArray();
 
 
