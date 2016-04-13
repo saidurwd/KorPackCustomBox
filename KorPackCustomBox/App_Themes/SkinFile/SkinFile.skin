@@ -1,0 +1,111 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+<!--table style="background-color: #f2eeee"></table-->
+--%>
+<asp:TextBox SkinID="txtOld" runat="server"  ForeColor="#404040" BorderStyle="Groove" Font-Names="Verdana" Font-Size="9pt"></asp:TextBox>
+<asp:TextBox SkinID="txtGrid" runat="server"  ForeColor="#404040" BorderStyle="Groove" Font-Names="Verdena" Font-Size="9pt"></asp:TextBox>
+<asp:TextBox SkinID="txtNumber" runat="server"  ForeColor="#404040" BorderStyle="Groove" Font-Names="Verdena" Font-Size="9pt"></asp:TextBox>
+<asp:TextBox SkinID="txtNormal" runat="server"  ForeColor="#404040" BorderStyle="Groove" Font-Names="Verdena" Font-Size="8pt"></asp:TextBox>
+<asp:TextBox SkinID="txtNormalGrd" runat="server"  ForeColor="#404040" BackColor="#E0E0E0" Font-Names="Verdena" Font-Size="8pt"></asp:TextBox>
+<asp:TextBox SkinID="txtFlat" runat="server" BorderStyle="None"></asp:TextBox>
+
+
+<asp:Label SkinID="lblNormal" runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black"></asp:Label>
+<asp:Label SkinID="lblWhiteFont" runat="server" Font-Names="Verdana" Font-Size="10pt" ForeColor="White"></asp:Label>
+<asp:Label SkinID="lblWhiteFontManualFontSize" runat="server" Font-Names="Verdana" ForeColor="White"></asp:Label>
+<asp:Label SkinID="lblNormalULF" Font-Underline="false"  runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black"></asp:Label>
+
+                            
+<asp:DropDownList SkinID="ddlNormal" runat="server" Font-Names="Verdana" Font-Size="8pt"></asp:DropDownList>                            
+                                    
+<asp:LinkButton  SkinID="lnkDefaultOld"   runat="server" Font-Names="Verdana" Font-Size="10px" ForeColor="Navy"></asp:LinkButton>
+<asp:LinkButton   SkinID="lnkInventory"   runat="server" Font-Names="Verdana" Font-Size="10px" ForeColor="Navy"></asp:LinkButton>
+<asp:LinkButton   SkinID="lnkNoUnderline"   runat="server" Font-Underline="false"  Font-Names="Verdana" Font-Size="10px" ForeColor="Navy"></asp:LinkButton>
+
+<asp:TreeView SkinID="treeOld" runat="server" Font-Names="Arial" Font-Size="9pt"> </asp:TreeView>
+<asp:TreeView SkinID="tvwInventory" runat="server" ExpandDepth="0" Font-Names="Verdana" Font-Size="X-Small" ForeColor="Yellow">
+                                    </asp:TreeView>
+
+<asp:TreeView SkinID="tvwInventoryTR" runat="server" ExpandDepth="0" Width="94%" ImageSet="Arrows" ForeColor="#D8E4F8" ShowCheckBoxes="Leaf">
+<ParentNodeStyle Font-Bold="false" Font-Names="Verdana" Font-Size="8pt" ForeColor="#D8E4F8"  />
+<HoverNodeStyle Font-Underline="True" ForeColor="#D8E4F8" />
+<SelectedNodeStyle Font-Underline="True" ForeColor="#D8E4F8" HorizontalPadding="0px"
+    VerticalPadding="0px" Font-Bold="True" Font-Names="Verdana" Font-Size="8pt"  />
+<NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="#D8E4F8" HorizontalPadding="1px"
+    NodeSpacing="0px" VerticalPadding="0px" BorderColor="#D8E4F8" BorderStyle="Outset" BorderWidth="1px" Font-Bold="True"  />
+<RootNodeStyle Font-Bold="True" Font-Names="Verdana" Font-Size="8pt" ForeColor="#D8E4F8"  />
+<LeafNodeStyle ForeColor="#D8E4F8" />
+</asp:TreeView>                                    
+
+<asp:TreeView SkinID="TvwBEI" runat="server" Font-Names="Arial" Font-Bold="True" Font-Size="X-Small" ForeColor="White" NodeIndent="5" ImageSet="Simple">
+<HoverNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="X-Small"
+Font-Underline="True" ForeColor="Yellow" />
+<SelectedNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="X-Small"
+Font-Underline="True" ForeColor="White" HorizontalPadding="0px" VerticalPadding="0px" />
+<NodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="X-Small" ForeColor="White"
+HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+<LeafNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="X-Small"
+ForeColor="White" />
+<RootNodeStyle Font-Bold="True" Font-Names="Arial" Font-Size="Small"
+ForeColor="White" />
+ </asp:TreeView>
+ 
+ <asp:TreeView SkinID="docControlTree" runat="server" Height="99%"                                         
+                    LeafNodeStyle-ChildNodesPadding="20px" CssClass="treeView" 
+                    ImageSet="XPFileExplorer" NodeIndent="15" >                    
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+                    <LeafNodeStyle ChildNodesPadding="20px" />
+                    <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="2px" NodeSpacing="0px" VerticalPadding="2px" />
+                    <ParentNodeStyle Font-Bold="False" />
+                    <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" 
+                        HorizontalPadding="0px" VerticalPadding="0px" />                                    
+                </asp:TreeView>
+        
+
+ <asp:Button SkinID="ButtonOld" runat="server" BackColor="#E0E0E0" Font-Bold="False" Font-Names="Verdana"
+            Font-Overline="False" Font-Size="XX-Small" Font-Strikeout="False" Font-Underline="False"
+            ForeColor="#000066" Height="18px" ></asp:Button>
+            
+<asp:DropDownList SkinID="ddOld" runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="#404040"> </asp:DropDownList>
+<asp:RadioButton runat="server" Font-Names="Verdana" Font-Size="11px"></asp:RadioButton>
+<asp:CheckBoxList runat="server" Font-Names="Verdana" Font-Size="10px"></asp:CheckBoxList>
+
+         
+         <asp:GridView SkinID="LigthBlueB"  runat="server" BackColor="White" BorderColor="#ffffFF"
+            BorderStyle="None" BorderWidth="0px" GridLines="Both">                        
+            <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
+            <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" Font-Size="X-Small" />
+            <SelectedRowStyle BackColor="#738A9C"  ForeColor="#F7F7F7" Font-Size="X-Small"/>
+            <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
+            <HeaderStyle Font-Names="Verdana" BackColor="#507CD1"  ForeColor="White"  Font-Size="X-Small"/>
+            <AlternatingRowStyle BackColor="#F7F7F7" />
+        </asp:GridView>
+        
+           <asp:GridView SkinID="DocControlGrid" runat="server" AutoGenerateColumns="False" Width="98%"
+                        BackColor="White" BorderColor="#999999" 
+                        BorderStyle="Solid" BorderWidth="1px" BorderHeight="10px" CellPadding="3" 
+                        EnableModelValidation="True" ForeColor="Black" GridLines="Vertical">
+                        <AlternatingRowStyle BackColor="#ebeae4" />
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+           </asp:GridView>
+
+        
+        
+        
+        

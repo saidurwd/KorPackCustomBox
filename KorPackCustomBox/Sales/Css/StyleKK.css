@@ -1,0 +1,421 @@
+﻿
+.cleardiv /* This has a ie7 version of ie css */
+{
+    clear: both;
+}
+/*****Table Style******/
+
+/*****Table Style******/
+.tblInventorydesign
+{
+    /*position: relative;     top: 20px;     width: 30%;*/
+    width: 60%;
+    margin-top: 20px;
+    margin-right: 50px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Verdana" , "Times New Roman" , Times, serif;
+    line-height: 25px;
+    color: #800000;
+}
+/*.tblInventorydesign td{border:2px solid black;}*/
+.tblInventorydesign td:first-child
+{
+    /*width: 25%;*/
+}
+/***Inventory Div*/
+.dvInventory
+{
+    /*padding-right: 14px;*/ /*padding: 5px 5px 5px 5px;*/
+    width: 30%;
+}
+/***End Inventory Div*/
+/**CheckBox Style***/
+
+.dvChecklist
+{
+    padding: 10px 5px 5px 5px;
+    height: 100%; /*overflow:scroll;*/
+    width: 30%;
+}
+.chkorderlist
+{
+    /*     position: relative;     top: 20px;     margin-left: 10px;*/
+    width: 80%;
+    border: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Verdana" , "Times New Roman" , Times, serif;
+    line-height: 25px;
+    color: #800000;
+}
+.chkorderlist td
+{
+    padding: 2px 2px 2px 0;
+    vertical-align: top;
+}
+.chkorderlist td input
+{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
+/****Inventory Detail*****/
+/*
+.dvInventoryDispaly
+{
+    margin-top: 20px;
+    margin: 20px 10px 5px 10px;
+    overflow: auto;
+}
+*/
+.dvInventoryDispaly span
+{
+    float: left;
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 16px;
+}
+#dvFilter
+{
+    background: #92ABD0;
+}
+.grvInventoryDisplay th
+{
+    background-image: url('../../_Images/ButtonStrip.png');
+    background-repeat: repeat-x;
+    text-indent: 3px;
+    height: 25px;
+    color: White;
+    font-family: Calibri;
+    font-size: small;
+}
+.grvInventoryDisplay tr
+{
+    font-family: Calibri;
+    font-size: small;
+    text-align: left;
+    text-indent: 3px;
+    height: 20px;
+}
+
+/*
+.grvInventoryDisplay
+{
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 12px;
+    width: 100%;
+    text-align: left; 
+    min-width: 20%;
+}
+.grvInventoryDisplay th
+{
+    padding: 2px 8px 3px 8px;
+    font-weight: normal; 
+    color: #fff; 
+    background: #92ABD0;
+    text-align: left;
+}
+.grvInventoryDisplay td
+{
+    padding: 2px 7px 2px 7px;
+    color: #669;
+}
+.grvInventoryDisplay tbody tr:hover td
+{
+    color: #339;
+    background: #d0dafd;
+} 
+*/
+.dvOrderDisplay
+{
+    margin-top: 10px;
+    overflow: auto;
+}
+.dvOrderDisplay span
+{
+    float: left;
+    margin-left: 20px;
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 16px;
+}
+
+#newspaper-a
+{
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #69c;
+}
+#newspaper-a th
+{
+    padding: 8px 13px 8px 13px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #039;
+    border-bottom: 1px dashed #69c;
+}
+#newspaper-a td
+{
+    padding: 7px 17px 7px 17px;
+    color: #669;
+}
+#newspaper-a tbody tr:hover td
+{
+    color: #339;
+    background: #d0dafd;
+}
+
+/*****Inventory Detail*****/
+
+/*******Empty GridRow *******/
+.grdRowEmpty
+{
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    color: red;
+}
+/*******End Empty GridRow*******/
+
+.tbFilter
+{
+    width: 100%;
+    background: #92ABD0;
+}
+.tbFilter td
+{
+    /*border:2px solid green;*/
+    background: #92ABD0;
+    color: #fff;
+}
+.tbFilter td span
+{
+    /*    margin-left: 25%;*/
+    float: right;
+    margin-right: 5%;
+}
+#dvCustomer
+{
+    background: #92ABD0;
+}
+#tbCustomer
+{
+    /*float:left;*/
+    width: 30%;
+}
+
+#tbCustomer td
+{
+    /*border:2px solid green;*/
+    background: #92ABD0;
+    color: #fff;
+}
+
+#tbCustomer #spCustomer
+{
+    float: right;
+    padding-right: 5%;
+}
+/*****************Customize Inventory Detail*******************/
+.dvHeader
+{
+    margin: 2% 20% 0% 20%;
+}
+.tblUserDesign
+{
+    width: 100%;
+    border: 0px; /*position: relative;*/
+    top: 10px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Verdana" , "Times New Roman" , Times, serif;
+    line-height: 25px;
+    color: #800000; /*padding: 5px 5px 5px 5px;*/
+    vertical-align: top;
+}
+.tblUserDesign td
+{
+    /*border: 1px solid pink;*/
+}
+.tblUserDesign td:first-child
+{
+    width: 20%;
+}
+.lblRecordStatus
+{
+    position: relative;
+    left: 20%;
+    color: Green;
+}
+.ddpRoleID
+{
+    width: 90%;
+    height: 20%;
+}
+.lblUserName
+{
+    padding-left: 40px;
+}
+.div_outer
+{
+    width: 100%;
+}
+.div_outer .do_left
+{
+    width: 60%;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+.div_outer .do_left .do_center
+{
+    width: 47.3%;
+    float: left;
+    padding: 1%;
+}
+.clr
+{
+    clear: both;
+    height: 0px;
+}
+.spUser
+{
+    float: left;
+    padding-left: 6px;
+}
+.grdFields
+{
+    font-family: Arial, "Bitstream Vera Sans" ,Helvetica,Verdana,sans-serif;
+    width: 100%;
+}
+.grdFields th
+{
+    border: 1px solid black;
+    background-color: #8BA6CE;
+    text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;
+    font-family: Georgia, "Times New Roman" , "Bitstream Charter" ,Times,serif;
+    font-weight: normal;
+    padding: 7px 7px 8px;
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 14px;
+}
+
+.grdFields td
+{
+    border-top-color: white;
+    border-bottom: 1px solid #DFDFDF;
+    font-size: 12px;
+    padding: 4px 7px 2px;
+    vertical-align: top;
+    color: #555;
+}
+
+.grdFields tr:hover
+{
+    background-color: #EEEEEE;
+}
+
+/*****************End Customize Inventory Detail*******************/
+
+/**********************Sale Order**************************/
+.div_Content
+{
+    width: 100%;
+}
+
+.do_Inventory
+{
+    width: 50%;
+    float: left;
+    padding: 1%;
+}
+.do_Summary
+{
+    width: 40%;
+    float: left;
+    padding: 3%;
+}
+
+.clr
+{
+    clear: both;
+    height: 0px;
+}
+.do_Order
+{
+    width: 52%;
+    height: 50%;
+    overflow: auto;
+    margin: 0% 0% 0% 46%;
+}
+
+.do_InvGrid
+{
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+.dvOrderSummary
+{
+    width: 100%;
+    overflow: auto;
+}
+
+/* Table Styles**/
+.tblCustomer
+{
+    width: 100%;
+    font-family: Georgia, "Times New Roman" , "Bitstream Charter" ,Times,serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+.tblCustomer td:first-child
+{
+    width: 40%;
+}
+.tblCustomer td
+{
+    padding: 3px 3px 3px 10px;
+    vertical-align: top;
+}
+.tblCustomer td input[type="text"]
+{
+    width: 150px;
+    margin-left: 3px;
+    padding: 2px 10px;
+    align: left;
+}
+/*End Table style**/
+/********Order Summary**********/
+.dvSummaryMain
+{
+    border: 2px solid black;
+}
+.dvUserOrderSummary
+{
+    border: 2px solid red;
+}
+.modalBackground
+{
+    background-color: #E3E3E3;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.modalPopup
+{
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 5px;
+    width: 350px;
+    height: 300px;
+}
+
+/********End Order Summary**********/
+/*********************End Sale Order***************************/

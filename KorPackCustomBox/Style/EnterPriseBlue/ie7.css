@@ -1,0 +1,38 @@
+/* 
+ * ie7.css - css styles for Win IE 7
+ *
+ */
+#ie7
+{
+}
+.ie 
+{
+}
+#ie7 .DropDownBox
+{
+    width:256px;
+    height:22px;
+    font-size:12px;
+}
+
+#ie7 .DropDownBoxLogin
+{
+    width:217px;
+    height:25px;
+    line-height:25px;
+    font-size:1.2em;
+}
+#ie7 .text-input
+{
+    width:209px;
+}
+#ie7 .txtBoxLogin
+{
+    width:150px;
+}
+
+#ie7 .clearDiv {    
+    zoom:1;
+    clear:both;  
+    height:20px;
+}
