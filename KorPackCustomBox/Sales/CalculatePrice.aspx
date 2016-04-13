@@ -148,9 +148,19 @@
                     data: "{ Qty: '" + _Qty + "', Length: '" + _Length + "', Width: '" + _Width + "',Height: '" + _Height + "',StyleId: '" + _Style + "',Strength: '" + _BroadGrade + "',FlipCorrDir: '" + _Flip + "',CustomersId: '" + _Customer + "',OverLap: '" + _OveLap + "',Truck: '" + _Truck + "',Perforated:'" + _Perforated + "',callFrom: '" + _callFrom + "',PCAutoId:'" + _PCAutoId + "'}",
                     dataType: "json",
                     success: function (data) {
-                        $('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data.FinalEachPrice);
-                        $('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data.TotalForThisQty);
-                        $('#ctl00_ContentPlaceHolder1_lblCBHAutoId').text(data.CBHAutoId);
+                        //data = $.parseJSON(data); //parse if return JavaScriptSerializer().Serialize
+
+                        //alert(data.d);
+                        var data1 = data.d;
+                        //alert(typeof (data1)); //it comes out to be Object
+                        ////no need to parse now if dont return JavaScriptSerializer().Serialize
+                        //alert(data1.FinalEachPrice);
+
+
+                        //alert(data.FinalEachPrice);
+                        $('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data1.FinalEachPrice);
+                        $('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data1.TotalForThisQty);
+                        $('#ctl00_ContentPlaceHolder1_lblCBHAutoId').text(data1.CBHAutoId);
 
                         //$('#ctl00_ContentPlaceHolder1_FinalEachPrice').text(data[22]);
                         //$('#ctl00_ContentPlaceHolder1_TotalForThisQty').text(data[23]);
