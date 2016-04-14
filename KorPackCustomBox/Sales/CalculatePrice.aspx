@@ -342,7 +342,7 @@
                     </div>
                     <br />
                     <div class="row" id="divBkf" style="display: none">
-                        <div class="col-md-1 text-right">
+                        <div class="col-md-2 text-right">
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
@@ -356,7 +356,7 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="col-md-2 text-right">
+                        <div class="col-md-1 text-right">
                         </div>
                         <div class="col-md-2">
                             <div class="form-group">
