@@ -2,14 +2,17 @@
     Inherits="StringEncodeDecode.UserAuthentication_PrmUserInfo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <%--
     <style type="text/css" title="currentStyle">
         @import "../media/css/demo_page.css";
         @import "../media/css/demo_table_jui.css";
         @import "../examples_support/themes/smoothness/jquery-ui-1.8.4.custom.css";
     </style>
-        <%--<script type="text/javascript" language="javascript" src="../media/js/jquery.dataTables.js"></script> --%>
+    <script type="text/javascript" language="javascript" src="../media/js/jquery.dataTables.js"></script> --%>
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />
     <script language="javascript" type="text/javascript">
         function SelectAllUsers(chk) {
             $('#<%=grdEmpInfo.ClientID%>').find("input:checkbox").each(function () {
@@ -38,62 +41,21 @@
             }
             $('#quicksearch').hide();
             $('#<%=grdEmpInfo.ClientID %>').DataTable({
+                "scrollX": true
+            });
+
+            /*$('#').DataTable({
                 "iDisplayLength": 20,
                 "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
-                //                //                 "sPaginationType": "full_numbers"
-                "bJQueryUI": true,
+                "bJQueryUI": false,
                 "sPaginationType": "full_numbers",
-                //"bStateSave": true,
-
                 "sScrollY": "350px",
                 "bPaginate": true,
                 "bScrollCollapse": true
-                //"aoColumnDefs": [{ "bSortable": false, "aTargets": [2] }]
-            });
-
+            });*/
         }
     </script>
-    <style type="text/css">
-        select {
-            width: 60px;
-        }
-
-        input[type="text"], input[type="password"] {
-            width: 100px;
-        }
-
-        .nopad {
-            padding-left: 2px;
-            padding-right: 10px !important;
-        }
-    </style>
     <script src="CreateUser.js" type="text/javascript"></script>
-
-    <style type="text/css">
-        myDiv {
-            border: 2px solid #0094ff;
-            -webkit-border-top-left-radius: 6px;
-            -webkit-border-top-right-radius: 6px;
-            -moz-border-radius-topleft: 6px;
-            -moz-border-radius-topright: 6px;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
-            width: 300px;
-            font-size: 12pt; /* or whatever */
-        }
-
-        .myDiv h2 {
-            padding: 4px;
-            color: #fff;
-            margin: 0;
-            background-color: #0094ff;
-            font-size: 12pt; /* or whatever */
-        }
-
-        .myDiv p {
-            padding: 4px;
-        }
-    </style>
     <div id="loading">
         <div class="loading-indicator">
             Page Loading...
@@ -102,19 +64,18 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <div class="container">
-    <div id="tabsMain" style="height: 350px">
-        <ul>
-            <li><a href="#tabs-1">Browse History</a></li>
-        </ul>
-        <div id="tabs-1">
+    <div class="panel panel-primary" id="tabsMain"> 
+        <div class="panel-heading"> 
+            <h3 class="panel-title">Browse History</h3> 
+        </div> 
+        <div class="panel-body"> 
             <div class="configurationPage">
                 <div class="dataGridStyle">
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>
                             <asp:GridView ID="grdEmpInfo" runat="server" AutoGenerateColumns="False" EnableViewState="True"
-                                CssClass="gridview  display table table-striped table-bordered" AlternatingRowStyle-CssClass="gridviewaltrow" DataKeyNames="CBHAutoId"
-                                AllowSorting="true" DataSourceID="SqlDataSource1"
-                                Width="100%" Font-Size="11px">
+                                CssClass="gridview  display table table-striped table-bordered table-responsive" AlternatingRowStyle-CssClass="gridviewaltrow" DataKeyNames="CBHAutoId"
+                                AllowSorting="true" DataSourceID="SqlDataSource1">
                                 <Columns>
                                     <asp:TemplateField HeaderText="User">
                                         <ItemTemplate>
@@ -146,8 +107,6 @@
                                             <asp:Label ID="grdlblHeight" runat="server" Text='<%# Bind("Height") %>'></asp:Label>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-
-
                                     <asp:TemplateField HeaderText="Style">
                                         <ItemTemplate>
                                             <asp:Label ID="grdlblCustomer" runat="server" Text='<%# Bind("StyleCId") %>'></asp:Label>
@@ -198,7 +157,8 @@
                     </asp:UpdatePanel>
                 </div>
             </div>
-        </div>
+        </div> 
+
     </div>
     </div>
     <div id="allHiddenField">
