@@ -57,8 +57,7 @@
 
     </script>
     <style type="text/css">
-        .bodyContent
-        {
+        .bodyContent {
             margin: 0 auto;
             width: 500px;
         }
@@ -66,82 +65,63 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container">
-        <div id="changePassword">
-            <div id="tabsMain">
-                <ul>
-                    <li><a href="#tabs-1">Change Password</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <div class="bodyContent">
-                        <div style="float: left; width: 25%;">
-                            <asp:Image ID="Image1" Style="padding-top: 20px" runat="server" ImageUrl="~/App_Themes/SkinFile/images/login.jpg" />
-                        </div>
-                        <div style="float: right; width: 74%;">
-                            <table class="cssTableFour">
-                                <tr>
-                                    <td colspan="2" class="topRow">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="style1">
-                                        <asp:Label ID="lblPartCode" runat="server" Text="Login ID"></asp:Label>
-                                    </td>
-                                    <td class="style2">
-                                        <asp:TextBox ID="txtLoginID" runat="server" Enabled="false"></asp:TextBox>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="style1">
-                                        <asp:Label ID="lblPassword" runat="server" Text="Old Password"></asp:Label>
-                                    </td>
-                                    <td class="style2">
-                                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="style1">
-                                        <asp:Label ID="Label1" runat="server" Text="New Password"></asp:Label>
-                                    </td>
-                                    <td class="style2">
-                                        <asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password"></asp:TextBox>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="style1">
-                                        <asp:Label ID="Label2" runat="server" Text="Conf Password"></asp:Label>
-                                    </td>
-                                    <td class="style2">
-                                        <asp:TextBox ID="txtConfNewPassword" runat="server" TextMode="Password"></asp:TextBox>
-                                    </td>
-                                </tr>
-                                <tr runat="server" visible="false" id="msgrow">
-                                    <td class="style1">
-                                        &nbsp;
-                                    </td>
-                                    <td class="style2">
-                                        <asp:Label ID="NoUser" runat="server" ForeColor="Red" Text="User does not exist"
-                                            Visible="False"></asp:Label>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="style1">
-                                        <asp:HiddenField ID="txtHidLoginID" runat="server" />
-                                    </td>
-                                    <td class="style2">
-                                        <asp:Button ID="btnLogin" runat="server" Text="Update" OnClick="btnLogin_Click" OnClientClick="javascript:return ChkPassword()" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="bottomRow">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="clearDiv">
-                        </div>
-                        <asp:HiddenField ID="hidMenuID" runat="server" />
+        <div class="panel panel-primary" id="changePassword">
+            <div class="panel-heading">
+                <h3 class="panel-title">Change Password</h3>
+            </div>
+            <div class="panel-body form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">
+                        <asp:Label ID="lblPartCode" runat="server" Text="Login ID"></asp:Label></label>
+                    <div class="col-sm-4">
+                        <asp:TextBox ID="txtLoginID" runat="server" Enabled="false" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4">
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">
+                        <asp:Label ID="lblPassword" runat="server" Text="Old Password"></asp:Label></label>
+                    <div class="col-sm-4">
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">
+                        <asp:Label ID="Label1" runat="server" Text="New Password"></asp:Label></label>
+                    <div class="col-sm-4">
+                        <asp:TextBox ID="txtNewPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">
+                        <asp:Label ID="Label2" runat="server" Text="Conf Password"></asp:Label></label>
+                    <div class="col-sm-4">
+                        <asp:TextBox ID="txtConfNewPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                        <asp:Label ID="NoUser" runat="server" ForeColor="Red" Text="User does not exist"
+                            Visible="False"></asp:Label>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-4">                        
+                        <asp:Button ID="btnLogin" runat="server" Text="Update" OnClick="btnLogin_Click" OnClientClick="javascript:return ChkPassword()" CssClass="btn btn-default btn-sm" />
+                    </div>
+                </div>
+                <asp:HiddenField ID="txtHidLoginID" runat="server" />
+                <asp:HiddenField ID="hidMenuID" runat="server" />
             </div>
         </div>
     </div>
