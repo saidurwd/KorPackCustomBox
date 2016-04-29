@@ -207,20 +207,28 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                <div class="thumbnail" style="height: 465px; padding: 20px; font-weight: 600;">
-                    <h2 class="text-cemter">Our On Demand QuicKor
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                <div class="thumbnail" style="min-height: 465px; padding: 20px; font-weight: 600;">
+                    <h4 class="text-cemter" style="line-height: 40px;"><a href="http://www.korpack.com/packaging-solutions/quickor/" target="_blank">Our On Demand QuicKor</a>
                     <br />
-                        machine provides you with:</h2>
+                        machine provides you with:</h4>
                     <ul class="home_ul_space">
                         <li>Flexibility that before was only a dream</li>
-                        <li>No worries about minimums</li>
-                        <li>Boxes being created within seconds with your specific dimensions/board grade</li>
+                        <li>No worries about
+                            <br />
+                            minimums</li>
+                        <li>Boxes being created within<br />
+                            seconds with your specific<br />
+                            dimensions/board grade</li>
                         <li>No tooling or lead time</li>
                         <li>Next or same day delivery</li>
                     </ul>
-                    If you need a quote on a large quantity, custom printing, or any other custom design,
-                    please click <a href="mailto:quotes@korpack.com">here</a>.
+                    If you need a quote on a<br />
+                    large quantity, custom<br />
+                    printing, or any other<br />
+                    custom design,
+                    please click<br />
+                    <a href="mailto:quotes@korpack.com">here</a>.
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -318,7 +326,17 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Board Grade <span onmouseover="tooltip.pop(this, '<h5>Board Grade</h5>32C – Standard Grade Board<br />200C-  Standard Grade Single Wall<br />44C-  Heavy Duty Single Wall<br />48BC-  Heavy Duty Double Wall')"><i class="fa fa-question-circle"></i></span>
+                                    Board Grade 
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Board Grade</h4>
+                                            32C – Standard Grade Board<br />
+                                            200C-  Standard Grade Single Wall<br />
+                                            44C-  Heavy Duty Single Wall<br />
+                                            48BC-  Heavy Duty Double Wall
+                                        </span>
+                                    </a>
                                 </label>
                                 <asp:DropDownList ID="ddlBroadGrade" runat="server" CssClass="form-control input-sm"
                                     onchange="javaScript:bindOnKeyUp1()">
@@ -331,7 +349,14 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Flip Corr Dir. <span onmouseover="tooltip.pop(this, '<h5>Flip Corrugation Direction</h5>You should only choose “Yes” for “Flip Corrugation Direction”<br /> if the corrugation direction does not matter (i.e. bookfold, tele<br /> trays, pad) Or it is a side loading box/tall box that would get<br /> laid on it is on its side.”')"><i class="fa fa-question-circle"></i></span>
+                                    Flip Corr Dir.
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Flip Corrugation Direction</h4>
+                                            You should only choose “Yes” for “Flip Corrugation Direction” if the corrugation direction does not matter (i.e. bookfold, tele trays, pad) Or it is a side loading box/tall box that would get laid on it is on its side.”
+                                        </span>
+                                    </a>
                                 </label>
                                 <asp:DropDownList ID="ddlFlip" runat="server" CssClass="form-control input-sm" onchange="javaScript:bindOnKeyUp1()">
                                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
@@ -347,7 +372,14 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="BoardGrade">
-                                    Perforated?  <span onmouseover="tooltip.pop(this, '<h5>Perforated?</h5>you should only choose “yes” for perforated for 0<br /> or shallow depth Bookfolds, this will allow a <br />cleaner edge and quicker fold, but it adds costs')"><i class="fa fa-question-circle"></i></span>
+                                    Perforated?
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Perforated?</h4>
+                                            you should only choose “yes” for perforated for 0 or shallow depth Bookfolds, this will allow a cleaner edge and quicker fold, but it adds costs
+                                        </span>
+                                    </a>
                                 </label>
                                 <asp:DropDownList ID="ddlPerforated" runat="server" CssClass="form-control input-sm"
                                     onchange="javaScript:bindOnKeyUp1()">
