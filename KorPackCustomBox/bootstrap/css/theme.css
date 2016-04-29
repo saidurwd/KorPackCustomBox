@@ -125,3 +125,7 @@ a.tooltips {
         border-top: 1px solid #CFB57C;
         border-right: 1px solid #CFB57C;
     }
+    .quicKor-header{
+        font-size:22px;
+        line-height: 40px;
+    }

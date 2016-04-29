@@ -207,28 +207,27 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
-                <div class="thumbnail" style="min-height: 465px; padding: 20px; font-weight: 600;">
-                    <h4 class="text-cemter" style="line-height: 40px;"><a href="http://www.korpack.com/packaging-solutions/quickor/" target="_blank">Our On Demand QuicKor</a>
-                    <br />
-                        machine provides you with:</h4>
-                    <ul class="home_ul_space">
-                        <li>Flexibility that before was only a dream</li>
-                        <li>No worries about
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                    <div class="thumbnail" style="min-height: 465px; padding: 20px; font-weight: 600;">
+                        <p class="quicKor-header text-left">
+                            <a href="http://www.korpack.com/packaging-solutions/quickor/" target="_blank">Our On Demand QuicKor</a>
                             <br />
-                            minimums</li>
-                        <li>Boxes being created within<br />
-                            seconds with your specific<br />
-                            dimensions/board grade</li>
-                        <li>No tooling or lead time</li>
-                        <li>Next or same day delivery</li>
-                    </ul>
-                    If you need a quote on a<br />
-                    large quantity, custom<br />
-                    printing, or any other<br />
-                    custom design,
-                    please click<br />
-                    <a href="mailto:quotes@korpack.com">here</a>.
+                            machine provides you with:
+                        </p>
+                        <ul class="home_ul_space">
+                            <li>Flexibility that before was only a dream</li>
+                            <li>No worries about
+                            <br />
+                                minimums</li>
+                            <li>Boxes being created within<br />
+                                seconds with your specific<br />
+                                dimensions/board grade</li>
+                            <li>No tooling or lead time</li>
+                            <li>Next or same day delivery</li>
+                        </ul>
+                        If you need a quote on a large quantity, custom printing, or any other custom design, please click <a href="mailto:quotes@korpack.com">here</a>.
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
