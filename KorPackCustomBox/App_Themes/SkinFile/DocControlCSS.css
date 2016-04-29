@@ -1,0 +1,180 @@
+﻿* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	font-family:Verdana, sans-serif;
+	font-size: 11px;
+	margin:0;
+}
+
+
+/********** For = DocControl ************/
+
+div.contenetMain
+{
+  width:20%;
+  float:left;
+  
+  
+}
+div.contenetSecondary
+{
+  width:79%;
+  float:right;
+  
+  
+}
+.docControlCSS td
+{
+ padding-left:25px !important;
+ margin-left:25px;
+}
+.docControlCSS a
+{
+ color:Black;    
+}
+.doccontrol_row
+{
+   padding-left:25px !important;
+ margin-left:25px;  
+    }
+
+
+
+
+table.gridview, table.detailstable
+{
+    border: 1px solid #dbddff;
+    border-bottom: 3px solid #dbddff;
+    border-collapse: collapse;
+    font-family: Verdana, Sans-Serif;
+    color: #000000;
+    font-size: 8pt;
+    background-color: #ffffff;
+}
+
+table.gridview th
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.1em;
+    background-color:Navy;
+    color: #fff;
+}
+table.gridview td
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.1em;
+    color: #000;
+}
+table.gridview th
+{
+    font-family: Verdana Sans-Serif;
+    font-size: 1.3em;
+}
+
+
+table.gridview .gridviewalterrow
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.1em;
+    background-color: #ebeae4;
+    color: #000;
+}
+
+
+table.gridview a:link
+{
+    color: #085AD8;
+}
+
+table.gridview th a:link
+{
+    color: White;
+}
+
+#content_one
+{
+    background-color: #ECEFF4;
+}
+
+#doccontrol_popup
+{
+    background-color: #ECE9D8;
+}
+
+#doccontrol_popup input[type='submit'], #doccontrol input[type='submit'], .doccontrol_button
+{
+    background-color: #3B5998;
+    border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    padding: 2px 15px 3px;
+    text-align: center;
+}
+
+
+
+.uploadbox
+{
+    font-family: verdana;
+    font-size: smaller;
+    font-weight: bold;
+    text-align:center;
+    width:300px;
+    margin:auto;
+    padding-top:15px;
+    padding-bottom:5px;
+    
+}
+.uploadbox .uploadsection_text
+{
+ border:1px solid #d6d6d6;
+ color: #3a3a3a;    
+ text-align:left;
+ padding: 2px;  
+ line-height: 32px;
+}
+
+.uploadsection_text span
+{
+  text-align:center;
+  padding-left:90px;    
+  padding-top:0px;
+}
+.uploadbox .uploadsection_button
+{
+   text-align:right;
+   padding-top:2px;
+}
+
+.uploadbox .header
+{
+ background-color:#3b5998;
+ padding-left:4px;
+ color:White;
+ font-weight:bold;
+ font-size:14px;    
+ text-align:left;
+}
+
+#panelShowUserName
+{
+  font-family: Verdana, Times New Roman;
+   font-size:10pt;
+    font-weight: 600;
+     color:blue;
+      text-align:right;
+    
+}
