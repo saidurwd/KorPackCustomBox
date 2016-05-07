@@ -484,6 +484,14 @@
                             runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
                     </div>
                 </div>
+                <div class="space-10">
+                </div>
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
+                        <asp:Button ID="Button5" CssClass="btn btn-info btn-block" OnClick="btnProcessPORFQ_Click"
+                            runat="server" Text="Place Order" OnClientClick="javaScript: return CheckIfLoggedIn();" />
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-5" style="display: none">
                         <asp:Button ID="Button1" runat="server" Text="Calculate" OnClick="btnProcessPO_Click" />
