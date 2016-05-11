@@ -481,7 +481,7 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3">
                         <asp:Button ID="Button6" CssClass="btn btn-primary btn-block" OnClick="btnProcessPORFQ_Click"
-                            runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" />
+                            runat="server" Text="RFQ" OnClientClick="javaScript: return CheckIfLoggedIn();" data-toggle="modal" data-target="#RFQModal" />
                     </div>
                 </div>
                 <div class="space-10">
@@ -507,6 +507,173 @@
     </div>
     <br />
     <br />
+    <div class="modal fade" id="RFQModal" tabindex="-1" role="dialog" aria-labelledby="RFQModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">RFQ</h4>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h4>Inside Dimensions</h4>
+                        <div class="row" runat="server" id="rwPriceClassRFQ" style="display:none;">
+                            <div class="col-md-2 text-right">
+                                Price Class:
+                            </div>
+                            <div class="col-md-2">
+                                <asp:DropDownList ID="ddlPriceClassRFQ" runat="server" CssClass="form-control input-sm"
+                                    onchange="javaScript:bindOnKeyUp1()">
+                                    <asp:ListItem Text="0" Value="0"></asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-right">
+                                Quantity:
+                            </div>
+                            <div class="col-md-2">
+                                <asp:TextBox ID="txtQtyRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                            </div>
+                            <div class="col-md-1 text-right" style="display: none">
+                                Style:
+                            </div>
+                            <div class="col-md-2">
+                                <asp:DropDownList ID="ddlStyleRFQ" runat="server" CssClass="form-control input-sm" onchange="javaScript:bindOnKeyUp1()"
+                                    Style="display: none">
+                                    <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                                </asp:DropDownList>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-right labelMargin">
+                                Size:
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="Quantity" id="llbLRFQ" class="text-center">
+                                        L</label>
+                                    <asp:TextBox ID="txtLengthRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-center labelMargin">
+                                X
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="width" id="lblWRFQ" class="text-center">
+                                        W</label>
+                                    <asp:TextBox ID="txtWidthRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-center labelMargin" id="divXRFQ">
+                                X
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="Height" id="lblHRFQ" class="text-center">
+                                        H</label>
+                                    <asp:TextBox ID="txtheightRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-right">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="BoardGrade">
+                                        Board Grade 
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Board Grade</h4>
+                                            32C – Standard Grade Board<br />
+                                            200C-  Standard Grade Single Wall<br />
+                                            44C-  Heavy Duty Single Wall<br />
+                                            48BC-  Heavy Duty Double Wall
+                                        </span>
+                                    </a>
+                                    </label>
+                                    <asp:DropDownList ID="ddlBroadGradeRFQ" runat="server" CssClass="form-control input-sm"
+                                        onchange="javaScript:bindOnKeyUp1()">
+                                        <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-right">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="BoardGrade">
+                                        Flip Corr Dir.
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Flip Corrugation Direction</h4>
+                                            You should only choose “Yes” for “Flip Corrugation Direction” if the corrugation direction does not matter (i.e. bookfold, tele trays, pad) Or it is a side loading box/tall box that would get laid on it is on its side.”
+                                        </span>
+                                    </a>
+                                    </label>
+                                    <asp:DropDownList ID="ddlFlipRFQ" runat="server" CssClass="form-control input-sm" onchange="javaScript:bindOnKeyUp1()">
+                                        <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
+                                        <asp:ListItem Text="No" Value="0" Selected="True"></asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row" id="divBkfRFQ">
+                            <div class="col-md-2 text-right">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="BoardGrade">
+                                        Perforated?
+                                    <a class="tooltips" href="#">
+                                        <i class="fa fa-question-circle"></i>
+                                        <span><b></b>
+                                            <h4>Perforated?</h4>
+                                            you should only choose “yes” for perforated for 0 or shallow depth Bookfolds, this will allow a cleaner edge and quicker fold, but it adds costs
+                                        </span>
+                                    </a>
+                                    </label>
+                                    <asp:DropDownList ID="ddlPerforatedRFQ" runat="server" CssClass="form-control input-sm"
+                                        onchange="javaScript:bindOnKeyUp1()">
+                                        <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
+                                        <asp:ListItem Text="No" Value="0" Selected="True"></asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-right">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="BoardGrade">
+                                        Tuck</label>
+                                    <asp:TextBox ID="txtTruckRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-right">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="BoardGrade">
+                                        OverLap</label>
+                                    <asp:TextBox ID="txtOveLapRFQ" runat="server" CssClass="form-control input-sm" onkeyup="javaScript:bindOnKeyUp1();"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="col-md-1 text-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <%-- 
     <script type="text/javascript">
         $(document).ready(function () {
